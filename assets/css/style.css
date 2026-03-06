@@ -16,7 +16,7 @@ main {
 
 .section-title {
     font-size: 32px;
-    margin-bottom: 40px;
+    margin: 40px 0;
     text-align: center;
 }
 

@@ -8,11 +8,11 @@
       content="Безкоштовний онлайн‑інструмент для розділення PDF‑файлів. Оберіть сторінки, отримайте окремі PDF‑файли або ZIP‑архів. Весь процес виконується в браузері, без завантаження даних на сервер.">
 <link rel="canonical" href="https://your‑site.com/pdf/split.html">
 
-<link rel="stylesheet" href="./../assets/css/reset.css">
-<link rel="stylesheet" href="./../assets/css/vars.css">
-<link rel="stylesheet" href="./../assets/css/style.css">
-<link rel="stylesheet" href="./../assets/css/header.css">
-<link rel="stylesheet" href="./../assets/css/footer.css">
+<link rel="stylesheet" href="./../../assets/css/reset.css">
+<link rel="stylesheet" href="./../../assets/css/vars.css">
+<link rel="stylesheet" href="./../../assets/css/style.css">
+<link rel="stylesheet" href="./../../assets/css/header.css">
+<link rel="stylesheet" href="./../../assets/css/footer.css">
 
 <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
@@ -282,7 +282,7 @@
 <div class="tool-container">
 
   <!-- Повернення -->
-  <div class="tool-back"><a href="#" data-link="pdf/pdf-tools.html">← До всіх PDF‑інструментів</a></div>
+  <div class="tool-back"><a href="#" data-link="pdftools/">← До всіх PDF‑інструментів</a></div>
 
   <!-- Хедер -->
   <div class="tool-header">
@@ -402,31 +402,19 @@
   </section>
 
   <!-- Інші PDF‑інструменти -->
-  <section class="other-tools">
-      <h2>Інші інструменти для PDF</h2>
-      <div class="tools-grid">
-          <a href="#" data-link="pdf/merge.html" class="tool-card">
-              <span>🔗</span><h3>Об’єднати PDF</h3><p>З’єднати кілька документів в один</p>
-          </a>
-          <a href="#" data-link="pdf/compress.html" class="tool-card">
-              <span>🗜</span><h3>Стиснути PDF</h3><p>Зменшити розмір файлу без втрати якості</p>
-          </a>
-          <a href="#" data-link="pdf/pdf‑to‑image.html" class="tool-card">
-              <span>📷</span><h3>PDF в фото</h3><p>Конвертувати PDF в зображення</p>
-          </a>
-          <a href="#" data-link="pdf/image-to-pdf.html" class="tool-card">
-              <span>📷</span><h3>Зображення в PDF</h3><p>Конвертація зображення в PDF</p>
-          </a>
-      </div>
-  </section>
+    <section class="other-tools">
+        <h2>Інші PDF інструменти</h2>
+        <div id="toolsInject"></div>   <!-- ← тут скрипт вставить <div class="tools-grid">… -->
+    </section>
+    <script type="module" src="./../assets/js/tools-inject.js"></script>
 
 </div>
 </main>
 
 <footer></footer>
 
-<script type="module" src="./../assets/js/header.js"></script>
-<script type="module" src="./../assets/js/main.js"></script>
+<script type="module" src="./../../assets/js/header.js"></script>
+<script type="module" src="./../../assets/js/main.js"></script>
 
 <script>
 /* --------------------------------------------------------------

@@ -5,11 +5,11 @@
 <title>Конвертувати фото у PDF — LB Tools</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-<link rel="stylesheet" href="./../assets/css/reset.css">
-<link rel="stylesheet" href="./../assets/css/vars.css">
-<link rel="stylesheet" href="./../assets/css/style.css">
-<link rel="stylesheet" href="./../assets/css/header.css">
-<link rel="stylesheet" href="./../assets/css/footer.css">
+<link rel="stylesheet" href="./../../assets/css/reset.css">
+<link rel="stylesheet" href="./../../assets/css/vars.css">
+<link rel="stylesheet" href="./../../assets/css/style.css">
+<link rel="stylesheet" href="./../../assets/css/header.css">
+<link rel="stylesheet" href="./../../assets/css/footer.css">
 
 <!-- PDF‑Lib (створює PDF у пам’яті) -->
 <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
@@ -638,25 +638,20 @@ input:focus {
   </section>
 
   <!-- Інші інструменти -->
-  <div class="other-tools">
-    <h2>Інші PDF‑інструменти</h2>
-    <div class="tools-grid">
-      <a href="#" data-link="pdf/merge.html" class="tool-card"><span>🔗</span><h3>Об’єднати PDF</h3><p>З’єднує кілька PDF в один документ</p></a>
-      <a href="#" data-link="pdf/split.html" class="tool-card"><span>✂</span><h3>Розбити PDF</h3><p>Розділяє PDF на окремі сторінки</p></a>
-      <a href="#" data-link="pdf/compress.html" class="tool-card"><span>🗜</span><h3>Стиснути PDF</h3><p>Зменшує розмір PDF файлу</p></a>
-      <a href="#" data-link="pdf/pdf‑to‑image.html" class="tool-card">
-            <span>📷</span><h3>PDF в фото</h3><p>Конвертувати PDF в зображення</p>
-        </a>
-    </div>
-  </div>
+    <section class="other-tools">
+        <h2>Інші PDF інструменти</h2>
+        <div id="toolsInject"></div>   <!-- ← тут скрипт вставить <div class="tools-grid">… -->
+    </section>
+    <script type="module" src="./../assets/js/tools-inject.js"></script>
+
 
 </div>
 </main>
 
 <footer></footer>
 
-<script type="module" src="./../assets/js/header.js"></script>
-<script type="module" src="./../assets/js/main.js"></script>
+<script type="module" src="./../../assets/js/header.js"></script>
+<script type="module" src="./../../assets/js/main.js"></script>
 
 <script>
 const { PDFDocument } = PDFLib;
