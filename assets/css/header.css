@@ -84,7 +84,7 @@
 .mega-menu__content{
     box-sizing: border-box;
     max-height: calc(80vh - 70px);
-    overflow-y: scroll;
+    overflow-y: auto;
     background:var(--bg-primary);
     padding:30px;
     border-radius:20px;

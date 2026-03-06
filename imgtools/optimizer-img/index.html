@@ -7,13 +7,13 @@
     <meta name="description" content="Стиснути зображення онлайн безкоштовно. Оптимізуйте JPEG, PNG, WebP, AVIF без втрати якості прямо у браузері. Без реєстрації, без завантаження на сервер.">
     <meta name="keywords" content="стиснути зображення онлайн, оптимізатор зображень, зменшити розмір фото, compress image online, webp, avif, jpeg, png">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://example.com/image-optimizer.html">
+    <link rel="canonical" href="https://lbtools.site/imgtools/optimizer-img/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Стиснути зображення онлайн — LB Tools">
     <meta property="og:description" content="Безкоштовний онлайн оптимізатор зображень. Працює прямо у браузері без передачі файлів на сервер.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://example.com/image-optimizer.html">
+    <meta property="og:url" content="https://lbtools.site/imgtools/optimizer-img/">
 
     <!-- JSON-LD -->
     <script type="application/ld+json">
@@ -21,7 +21,7 @@
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "Оптимізатор зображень",
-    "url": "https://example.com/image-optimizer.html",
+    "url": "https://lbtools.site/imgtools/optimizer-img/",
     "applicationCategory": "MultimediaApplication",
     "operatingSystem": "All",
     "description": "Онлайн інструмент для стиснення та оптимізації зображень JPEG, PNG, WebP, AVIF без втрати якості прямо у браузері."
@@ -31,12 +31,12 @@
     
 
     <!-- Стилі -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/vars.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./../../assets/css/reset.css">
+    <link rel="stylesheet" href="./../../assets/css/vars.css">
+    <link rel="stylesheet" href="./../../assets/css/style.css">
 
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./../../assets/css/header.css">
+    <link rel="stylesheet" href="./../../assets/css/footer.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -384,6 +384,27 @@
             margin-bottom:6px;
         }
     }
+
+   /* 1. Базове оформлення всього поля (не біле) */
+    .form-input {
+        background: transparent;          /* колір фону, який вам потрібен */
+    }
+
+    /* 2. Стилізація «кнопки» вибору файлів */
+    .file-input::file-selector-button {       /* псевдо‑елемент, який стилізує кнопку */
+        background:var(--accent);                 /* будь‑який колір */
+        color:#fff;
+        border:none;
+        border-radius:.3rem;
+        padding:.5rem 1rem;
+        cursor:pointer;
+        font-size:1rem;
+    }
+
+    /* 3. Додатковий ефект при наведенні */
+    .file-input::file-selector-button:hover {
+        background: var(--accent-hover);
+    }
     </style>
 </head>
 
@@ -406,10 +427,15 @@
             <section class="controls">
 
                 <div class="form-group">
-                    <label class="form-label" for="files">Файли</label>
-                    <input type="file" id="files" class="form-input"
-                           accept="image/*" multiple>
-                </div>
+    <label class="form-label" for="files">Файли</label>
+    <!-- додаємо власний клас file-input -->
+    <input type="file"
+           id="files"
+           class="form-input file-input"
+           accept="image/*"
+           multiple>
+</div>
+
 
                 <div class="form-group">
                     <label class="form-label" for="width">
@@ -535,8 +561,8 @@
     <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 
     <!-- Модулі -->
-    <script type="module" src="./assets/js/main.js"></script>
-    <script type="module" src="./assets/js/header.js"></script>
+    <script type="module" src="./../../assets/js/main.js"></script>
+    <script type="module" src="./../../assets/js/header.js"></script>
     
     <script>
         /**
