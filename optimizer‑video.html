@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Local Video Compressor</title>
+</head>
+<body>
+
+<h2>Повністю локальний відео-компресор</h2>
+
+<input type="file" id="upload" accept="video/*"><br><br>
+
+<label>Ширина:</label>
+<input type="number" id="width" placeholder="1280"><br><br>
+
+<label>FPS:</label>
+<input type="number" id="fps" placeholder="30"><br><br>
+
+<label>Бітрейт (k):</label>
+<input type="number" id="bitrate" placeholder="1000"><br><br>
+
+<label>Формат:</label>
+<select id="format">
+  <option value="mp4">mp4</option>
+  <option value="webm">webm</option>
+</select><br><br>
+
+<label>
+  <input type="checkbox" id="mute">
+  Прибрати звук
+</label><br><br>
+
+<button onclick="compress()">Стиснути</button>
+
+<p id="status"></p>
+
+<script src="./assets/ffmpeg/ffmpeg.min.js"></script>
+<script>
+const { createFFmpeg, fetchFile } = FFmpeg;
+
+const ffmpeg = createFFmpeg({
+    log: true,
+    corePath: "./assets/ffmpeg/ffmpeg-core.js"  // 🔥 КРИТИЧНО
+});
+
+(async () => {
+    await ffmpeg.load();
+})();
+</script>
+
+async function compress() {
+
+  const file = document.getElementById('upload').files[0]
+  if (!file) return alert("Завантаж відео")
+
+  document.getElementById("status").innerText = "Завантаження FFmpeg..."
+
+  if (!ffmpeg.isLoaded()) {
+    await ffmpeg.load()
+  }
+
+  document.getElementById("status").innerText = "Обробка..."
+
+  ffmpeg.FS('writeFile', 'input', await fetchFile(file))
+
+  const width = document.getElementById("width").value
+  const fps = document.getElementById("fps").value
+  const bitrate = document.getElementById("bitrate").value
+  const format = document.getElementById("format").value
+  const mute = document.getElementById("mute").checked
+
+  let command = ['-i', 'input']
+
+  if (width) command.push('-vf', `scale=${width}:-1`)
+  if (fps) command.push('-r', fps)
+  if (bitrate) command.push('-b:v', bitrate + 'k')
+  if (mute) command.push('-an')
+
+  command.push('output.' + format)
+
+  await ffmpeg.run(...command)
+
+  const data = ffmpeg.FS('readFile', 'output.' + format)
+
+  const blob = new Blob([data.buffer], { type: 'video/' + format })
+  const url = URL.createObjectURL(blob)
+
+  const a = document.createElement('a')
+  a.href = url
+  a.download = 'compressed.' + format
+  a.click()
+
+  document.getElementById("status").innerText = "Готово!"
+}
+</script>
+
+</body>
+</html>

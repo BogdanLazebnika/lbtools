@@ -1,0 +1,92 @@
+<!-- partials/header.html -->
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+    <div class="header">
+        <div class="header__inner  container">
+
+            <a href="#" data-link="index.html" class="logo">LB Tools</a>
+
+            <nav class="nav">
+                <a href="#" data-link="index.html">Головна</a>
+
+                <div class="nav__dropdown">
+                    <button class="nav__link nav__apps-btn">
+                        Застосунки
+                    </button>
+
+                    <div class="mega-menu">
+                        <div class="mega-menu__content container">
+                            <h2>Наші інструменти</h2>
+
+                            <div class="mega-grid">
+                                <a href="#" data-link="optimizer-img.html" class="mega-card">
+                                    <span>🖼</span>
+                                    <h3>Оптимізатор зображень</h3>
+                                    <p>Стискай фото без втрати якості</p>
+                                </a>
+
+                                <a href="#" data-link="pdf/pdf-tools.html" class="mega-card">
+                                    <span>PDF</span>
+                                    <div>
+                                        <h4>Робота з PDF</h4>
+                                        <p>Стискай, обєднуй, конвертуй, оптимізуй, редактуй, та багато іншого</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" data-link="about.html">Про нас</a>
+            </nav>
+
+            <div class="header__actions">
+                <button id="themeToggle" class="theme-toggle">🌙</button>
+                <button id="mobileMenuBtn" class="mobile-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MOBILE MENU -->
+<div id="mobileMenu" class="mobile-menu">
+    <a href="#" data-link="index.html">Головна</a>
+    
+    <!-- Додаємо випадаючий блок для застосунків -->
+    <div class="mobile-dropdown">
+        <button class="mobile-dropdown-btn">
+            <span>Застосунки</span>
+            <span class="dropdown-arrow">▼</span>
+        </button>
+        
+        <div class="mobile-dropdown-content">
+            <a href="#" data-link="optimizer-img.html" class="mobile-submenu-item">
+                <span>🖼</span>
+                <div>
+                    <h4>Оптимізатор зображень</h4>
+                    <p>Стискай фото без втрати якості</p>
+                </div>
+            </a>
+            <a href="#" data-link="pdf/pdf-tools.html" class="mobile-submenu-item">
+                <span>PDF</span>
+                <div>
+                    <h4>Робота з PDF</h4>
+                    <p>Стискай, обєднуй, конвертуй, оптимізуй, редактуй, та багато іншого</p>
+                </div>
+            </a>
+
+            
+            <!-- Додавай інші сервіси тут -->
+        </div>
+    </div>
+    
+    <a href="#" data-link="about.html">Про нас</a>
+</div>
+<div id="mobileOverlay" class="mobile-overlay"></div>
+

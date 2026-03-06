@@ -1,0 +1,427 @@
+/* ================= HEADER ================= */
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1003;
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--border-color);
+
+    transition: var(--transition);
+}
+
+.header__inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:70px;
+}
+
+.logo{
+    font-weight:700;
+    font-size:20px;
+    text-decoration:none;
+    color:var(--text-primary);
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.nav{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.nav a,
+.nav__link{
+    color:var(--text-secondary);
+    text-decoration:none;
+    font-weight:500;
+    background:none;
+    border:none;
+    cursor:pointer;
+    transition:var(--transition);
+}
+
+.nav a:hover,
+.nav__link:hover{
+    color:var(--accent);
+}
+
+
+/* ================= MEGA MENU ================= */
+
+.nav__dropdown{
+    position:relative;
+}
+
+.mega-menu{
+
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform:translateX(-50%);
+    width:100vw;
+
+    padding:40px 0;
+
+    opacity:0;
+    visibility:hidden;
+    transition:0.25s ease;
+}
+
+.nav__dropdown:hover .mega-menu{
+    opacity:1;
+    visibility:visible;
+}
+
+.mega-menu__content{
+    box-sizing: border-box;
+    max-height: calc(80vh - 70px);
+    overflow-y: scroll;
+    background:var(--bg-primary);
+    padding:30px;
+    border-radius:20px;
+    border:1px solid var(--border-color);
+}
+
+.mega-menu h2{
+    margin-bottom:40px;
+    color:var(--text-primary);
+}
+
+.mega-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:40px;
+}
+
+.mega-card{
+    padding:30px;
+    border-radius:20px;
+    background:var(--card-bg);
+    border:1px solid var(--border-color);
+    text-decoration:none;
+    color:var(--text-primary);
+    transition:var(--transition);
+}
+
+.mega-card span{
+    font-size:32px;
+}
+
+.mega-card:hover{
+    transform:translateY(-6px);
+    border-color:var(--accent);
+}
+
+
+/* ================= ACTIONS ================= */
+
+.header__actions{
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+.theme-toggle{
+    background:var(--card-bg);
+    border:1px solid var(--border-color);
+    border-radius:12px;
+    padding:8px 12px;
+    cursor:pointer;
+    color:var(--text-primary);
+    transition:var(--transition);
+}
+
+.theme-toggle:hover{
+    border-color:var(--accent);
+}
+
+
+/* ================= BURGER BUTTON ================= */
+.mobile-btn{
+    width:44px;
+    height:44px;
+
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:6px;
+
+    background:var(--card-bg);
+    border:1px solid var(--border-color);
+    border-radius:14px;
+
+    cursor:pointer;
+    transition:0.25s ease;
+
+    position:relative;
+    z-index:1003;
+}
+
+/* Glow hover */
+.mobile-btn:hover{
+    border-color:var(--accent);
+    box-shadow:var(--glow);
+}
+
+/* Lines */
+.mobile-btn span{
+    width:20px;
+    height:2px;
+    background:var(--text-primary);
+    border-radius:2px;
+    transition:0.25s ease;
+}
+
+/* ACTIVE → X */
+.mobile-btn.active span:nth-child(1){
+    transform:translateY(8px) rotate(45deg);
+}
+
+.mobile-btn.active span:nth-child(2){
+    opacity:0;
+}
+
+.mobile-btn.active span:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
+}
+
+
+/* ================= MOBILE MENU ================= */
+
+/* ================= MOBILE MENU ================= */
+
+.mobile-menu{
+    box-sizing: border-box;
+    position:fixed;
+    top:70px;
+    right:-380px;
+
+    width:100%;
+    max-width:380px;
+    height:calc(100vh - 70px);
+
+    background:var(--bg-secondary);
+    padding:40px 24px;
+
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+
+    transition:0.35s ease;
+    z-index:1002;
+
+    border-left:1px solid var(--border-color);
+    overflow-y:auto;
+}
+
+.mobile-menu.open{
+    right:0;
+}
+
+/* Title inside mobile (optional if додаси) */
+.mobile-menu::before{
+    content:"Меню";
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:var(--text-muted);
+    margin-bottom:10px;
+}
+
+
+/* ==== MOBILE LINKS AS BUTTON CARDS ==== */
+
+.mobile-menu a{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:16px 18px;
+    border-radius:14px;
+
+    text-decoration:none;
+    font-weight:500;
+    font-size:15px;
+
+    background:var(--card-bg);
+    border:1px solid var(--border-color);
+
+    color:var(--text-primary);
+
+    transition:0.25s ease;
+    position:relative;
+}
+
+/* Arrow */
+.mobile-menu a::after{
+    content:"›";
+    font-size:18px;
+    color:var(--text-muted);
+    transition:0.25s ease;
+}
+
+/* Hover */
+.mobile-menu a:hover{
+    border-color:var(--accent);
+    background:var(--accent-soft);
+    transform:translateX(4px);
+}
+
+.mobile-menu a:hover::after{
+    color:var(--accent);
+    transform:translateX(4px);
+}
+
+/* Active press effect */
+.mobile-menu a:active{
+    transform:scale(0.98);
+}
+
+
+/* Divider (optional якщо захочеш групи) */
+.mobile-menu hr{
+    border:none;
+    height:1px;
+    background:var(--border-color);
+    margin:10px 0;
+}
+
+/* ================= OVERLAY ================= */
+
+.mobile-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    backdrop-filter:blur(4px);
+
+    opacity:0;
+    pointer-events:none;
+    transition:0.3s ease;
+
+    z-index:1001;
+}
+
+.mobile-overlay.active{
+    opacity:1;
+    pointer-events:auto;
+}
+
+
+/* ================= LOCK SCROLL ================= */
+
+body.menu-open{
+    overflow:hidden;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .nav{
+        display:none;
+    }
+
+    .mobile-btn{
+        display:flex;
+    }
+}
+
+
+
+
+/* ================= MOBILE DROPDOWN ================= */
+
+.mobile-dropdown {
+    position: relative;
+}
+
+.mobile-dropdown-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 18px;
+    border-radius: 14px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.mobile-dropdown-btn:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+}
+
+.dropdown-arrow {
+    transition: transform 0.3s ease;
+    font-size: 12px;
+}
+
+.mobile-dropdown.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.mobile-dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    margin-left: 20px;
+}
+
+.mobile-dropdown.active .mobile-dropdown-content {
+    max-height: 500px; /* Або достатньо для твоїх елементів */
+}
+
+.mobile-submenu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    margin: 8px 0;
+    border-radius: 12px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: 0.25s ease;
+}
+
+.mobile-submenu-item span {
+    font-size: 24px;
+}
+
+.mobile-submenu-item div {
+    flex: 1;
+}
+
+.mobile-submenu-item h4 {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.mobile-submenu-item p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.mobile-submenu-item:hover {
+    border-color: var(--accent);
+    transform: translateX(4px);
+}
