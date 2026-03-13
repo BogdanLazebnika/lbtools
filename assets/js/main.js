@@ -11,6 +11,7 @@ function getBasePath() {
 
 const BASE_PATH = getBasePath();
 
+/* DATA-LINK NAVIGATION */
 document.addEventListener("click", function (e) {
     const link = e.target.closest("[data-link]");
     if (!link) return;
@@ -21,11 +22,23 @@ document.addEventListener("click", function (e) {
     window.location.href = BASE_PATH + path;
 });
 
-// assets/js/main.js
 
+/* FIX SVG ICON PATHS */
+window.fixIcons = function () {
+
+    const icons = document.querySelectorAll("use[data-icon]");
+
+    icons.forEach(icon => {
+        const path = icon.dataset.icon;
+        icon.setAttribute("href", BASE_PATH + path);
+    });
+
+}
+
+
+/* LOAD PARTIAL */
 export async function loadPartial(url, containerSelector) {
 
-    // 🔥 додаємо BASE_PATH
     const resp = await fetch(BASE_PATH + url);
 
     if (!resp.ok) throw new Error(`Failed to load ${url}`);
@@ -46,36 +59,18 @@ export async function loadPartial(url, containerSelector) {
         });
 
         newScript.textContent = oldScript.textContent;
+
         oldScript.replaceWith(newScript);
     });
 }
 
 
-/* АВТОЗАПУСК */
+/* AUTO LOAD HEADER + FOOTER */
 document.addEventListener('DOMContentLoaded', async () => {
 
     await loadPartial('partials/header.html', 'header');
     await loadPartial('partials/footer.html', 'footer');
 
-    // 🔥 після вставки partial можемо ініціалізувати речі
-    syncThemeButton();
+    fixIcons();
 
 });
-
-
-/* СИНХРОНІЗАЦІЯ КНОПКИ ТЕМИ */
-function syncThemeButton() {
-    const themeBtn = document.getElementById('themeToggle');
-    if (!themeBtn) return;
-
-    const isLight = document.body.classList.contains('light-theme');
-    themeBtn.textContent = isLight ? '☀️' : '🌙';
-}
-
-setTimeout(() => {
-    const themeBtn = document.getElementById('themeToggle');
-    if (!themeBtn) return;
-
-    const isLight = document.body.classList.contains('light-theme');
-    themeBtn.textContent = isLight ? '☀️' : '🌙';
-}, 50);
