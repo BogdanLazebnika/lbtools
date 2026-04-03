@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Категорія застосунків - LB Tools</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- Шапка (така сама як на всіх сторінках) -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">LB Tools</a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="services.html">Застосунки</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+            
+            <button class="theme-toggle" id="themeToggle" aria-label="Перемкнути тему">
+                <span class="theme-icon">🌙</span>
+            </button>
+            
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="category-page">
+        <div class="container">
+            <h1 id="category-title">Категорія</h1>
+            
+            <div id="all-apps-container"></div>
+
+            <script>
+            // Після завантаження сторінки
+            document.addEventListener('DOMContentLoaded', function() {
+                if (typeof AppsRenderer !== 'undefined') {
+                    AppsRenderer.renderAllApps('all-apps-container');
+                }
+            });
+            </script>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+
+<div id="specific-app"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    if (typeof AppsLoader !== 'undefined') {
+        const app = AppsLoader.getAppById('image-converter');
+        if (app) {
+            const container = document.getElementById('specific-app');
+            container.innerHTML = `
+                <div class="app-card">
+                    <div class="app-card-icon">${app.icon}</div>
+                    <h2>${app.name}</h2>
+                    <p>${app.description}</p>
+                    <a href="${app.url}" class="app-card-btn">Відкрити застосунок</a>
+                </div>
+            `;
+        }
+    }
+});
+</script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+
+
+
+
+        <div id="image-apps-container"></div>
+
+        <script>
+        // Після завантаження сторінки
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof AppsRenderer !== 'undefined') {
+                AppsRenderer.renderAppsByCategory('image-apps-container', 'Зображення');
+            }
+        });
+        </script>
+    </main>
+
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-categories-grid" id="footer-categories">
+                <!-- Динамічно заповнюється -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/apps-loader.js" defer></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+

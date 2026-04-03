@@ -1,0 +1,184 @@
+/* =========================================================
+   0️⃣  CSS ЗМІННІ ДЛЯ ТЕМ
+   ========================================================= */
+:root {
+    /* ── ШРИФТ ------------------------------------------------ */
+    --font-family: -apple-system, BlinkMacSystemFont,
+                    'Segoe UI', Roboto, 'Helvetica Neue',
+                    Arial, sans-serif;
+
+    /* ── КОЛІРИ СВІТЛОЇ ТЕМИ ------------------------------- */
+    --bg-primary:      #ffffff;
+    --bg-secondary:    #c6c7c9;
+    --bg-tertiary:     #e9ecef;
+
+    --text-primary:    #212529;
+    --text-secondary:  #6c757d;
+    --text-muted:       #adb5bd;
+
+    --accent-primary:   #2c3e50;
+    --accent-secondary: #3498db;
+    --accent-success:   #28a745;
+    --accent-danger:    #dc3545;
+    --accent-warning:   #ffc107;
+
+    --border-color:    #dee2e6;
+    --shadow-color:    rgba(0,0,0,.1);
+
+    --header-bg:       #2c3e50;
+    --header-text:     #ffffff;
+
+    /* ── ФУТЕР ------------------------------------------------- */
+    --footer-bg:       #2c3e50;   /* фон самого футера                */
+    --footer-dg-dtn:   #222;      /* "темна ділянка" – блоки, випадаки */
+    --footer-text:    #ffffff;
+    --footer-link-hover:#ffcc00;  /* колір посилання у hover           */
+    --light-text:      #fafafa;   /* колір для заголовків секцій      */
+
+    /* ── ФОН СТОРІНКИ ---------------------------------------- */
+    --page-bg-image:   url('/assets/img/background/background-white-tems.svg');
+
+    /* ── ПОСИЛАННЯ ------------------------------------------- */
+    --link-color:      #3498db;
+    --link-hover:      #2980b9;
+
+    /* ── ТИПОГРАФІЯ ---------------------------------------- */
+    --text-xs:   .75rem;   /* 12px */
+    --text-sm:   .875rem;  /* 14px */
+    --text-base: 1rem;     /* 16px */
+    --text-lg:   1.125rem;/* 18px */
+    --text-xl:   1.25rem; /* 20px */
+    --text-2xl:  1.5rem;  /* 24px */
+    --text-3xl:  1.875rem;/* 30px */
+    --text-4xl:  2.25rem; /* 36px */
+    --text-5xl:  3rem;    /* 48px */
+    --text-6xl:  3.75rem; /* 60px */
+
+    /* ── ВІДСТУПИ ------------------------------------------ */
+    --space-xs: .25rem;   /* 4px  */
+    --space-sm: .5rem;    /* 8px  */
+    --space-md: 1rem;     /* 16px */
+    --space-lg: 1.5rem;   /* 24px */
+    --space-xl: 2rem;     /* 32px */
+    --space-2xl:3rem;     /* 48px */
+    --space-3xl:4rem;     /* 64px */
+
+    /* RGB‑змінні – коли потрібен rgba() з opacity */
+    --header-bg-rgb: 44, 62, 80;
+    --accent-secondary-rgb: 52, 152, 219;
+}
+
+/* ── ТЕМНА ТЕМА ───────────────────────────────────────────────────── */
+[data-theme="dark"] {
+    /* Основні кольори */
+    --bg-primary:   #1a1d21;
+    --bg-secondary: #2d3136;
+    --bg-tertiary: #3d4248;
+
+    --text-primary: #e9ecef;
+    --text-secondary:#adb5bd;
+    --text-muted:   #6c757d;
+
+    --accent-primary:#3498db;
+    --accent-secondary:#5dade2;
+    --accent-success:#58d68d;
+    --accent-danger:#f1948a;
+    --accent-warning:#f7dc6f;
+
+    --border-color:#495057;
+    --shadow-color:rgba(0,0,0,.3);
+
+    --header-bg:#1a252f;
+    --header-bg-rgb:26,37,47;
+    --header-text:#ffffff;
+
+    /* ФУТЕР – темна палітра */
+    --footer-bg:       #1a1a1a;      /* темний фон футера                */
+    --footer-dg-dtn:   #111111;     /* темна ділянка – блоки, випадаки   */
+    --footer-text:    #e0e0e0;      /* колір тексту у футері             */
+    --footer-link-hover:#ffb400;   /* hover‑колір посилання              */
+    --light-text:      #fafafa;    /* саме для заголовків секцій */
+
+    /* ФОН СТОРІНКИ */
+    --page-bg-image: url('/assets/img/background/background-black-tems.svg');
+
+    /* ПОСИЛАННЯ */
+    --link-color:#5dade2;
+    --link-hover:#85c1e9;
+}
+
+/* ── СИСТЕМНА ТЕМА (авто‑перемикач) ─────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --bg-primary:   #1a1d21;
+        --bg-secondary:#2d3136;
+        --bg-tertiary: #3d4248;
+        --text-primary:#e9ecef;
+        --text-secondary:#adb5bd;
+        --text-muted:#6c757d;
+        --page-bg-image: url('/assets/img/background/background-black-tems.svg');
+    }
+}
+
+/* =========================================================
+   1️⃣  АДАПТИВНІ РОЗМІРИ ТЕКСТУ / ВІДСТУПІВ (медіа‑запити)
+   ========================================================= */
+@media (min-width:1440px){ :root{--text-base:1.125rem;--text-lg:1.25rem;--text-xl:1.5rem;--text-2xl:1.875rem;--text-3xl:2.25rem;--text-4xl:3rem;--text-5xl:3.75rem;--text-6xl:4.5rem;} }
+@media (max-width:1023px){ :root{--text-xs:.75rem;--text-sm:.8125rem;--text-base:.9375rem;--text-lg:1.0625rem;--text-xl:1.1875rem;--text-2xl:1.375rem;--text-3xl:1.625rem;--text-4xl:1.875rem;--text-5xl:2.25rem;--text-6xl:2.75rem;} }
+@media (max-width:767px){  :root{--text-xs:.6875rem;--text-sm:.75rem;--text-base:.875rem;--text-lg:1rem;--text-xl:1.125rem;--text-2xl:1.25rem;--text-3xl:1.5rem;--text-4xl:1.75rem;--text-5xl:2rem;--text-6xl:2.5rem;--space-md:.75rem;--space-lg:1.25rem;--space-xl:1.5rem;--space-2xl:2rem;--space-3xl:3rem;} }
+@media (max-width:479px){  :root{--text-xs:.625rem;--text-sm:.6875rem;--text-base:.8125rem;--text-lg:.9375rem;--text-xl:1.0625rem;--text-2xl:1.1875rem;--text-3xl:1.375rem;--text-4xl:1.5rem;--text-5xl:1.75rem;--text-6xl:2rem;--space-md:.5rem;--space-lg:1rem;--space-xl:1.25rem;--space-2xl:1.5rem;--space-3xl:2rem;} }
+
+/* =========================================================
+   2️⃣  БОКС‑САЙЗІНГ, БАЗОВІ СТИЛІ
+   ========================================================= */
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;min-height:100vh;display:flex;background-color:var(--bg-primary);background-image:var(--page-bg-image);background-size:cover;background-attachment:fixed;background-position:center;color:var(--text-primary);transition:all .3s ease;}
+body{margin:auto;max-width:1444px;width:100%;padding:var(--text-6xl) 0;overflow-x:hidden;position:relative;font-family:var(--font-family);background-image:var(--page-bg-image);background-size:cover;background-attachment:fixed;background-position:center;color:var(--text-primary);line-height:1.6;transition:all .3s ease;}
+main{background-color:var(--bg-primary);}
+
+/* Адаптивна ширина body */
+@media (max-width:1440px){body{max-width:1200px;}}
+@media (max-width:1200px){body{max-width:1023px;}}
+@media (max-width:1023px){body{max-width:900px;}}
+@media (max-width:900px){body{max-width:767px;}}
+@media (max-width:767px){body{max-width:100vw;padding:0;}}
+@media (max-width:767px){main{min-height:100vh;}}
+
+/* -------------------------------------------------
+   Анімації
+   ------------------------------------------------- */
+.fade-in{opacity:0;animation:fadeIn .6s ease forwards;}
+.slide-up{opacity:0;transform:translateY(30px);animation:slideUp .6s ease forwards;}
+.slide-down{opacity:0;transform:translateY(-30px);animation:slideDown .6s ease forwards;}
+.slide-left{opacity:0;transform:translateX(30px);animation:slideLeft .6s ease forwards;}
+.slide-right{opacity:0;transform:translateX(-30px);animation:slideRight .6s ease forwards;}
+.scale-in{opacity:0;transform:scale(.8);animation:scaleIn .6s ease forwards;}
+.bounce-in{opacity:0;transform:scale(.3);animation:bounceIn .6s ease forwards;}
+@keyframes fadeIn{to{opacity:1}}
+@keyframes slideUp{to{opacity:1;transform:translateY(0)}}
+@keyframes slideDown{to{opacity:1;transform:translateY(0)}}
+@keyframes slideLeft{to{opacity:1;transform:translateX(0)}}
+@keyframes slideRight{to{opacity:1;transform:translateX(0)}}
+@keyframes scaleIn{to{opacity:1;transform:scale(1)}}
+@keyframes bounceIn{0%{opacity:0;transform:scale(.3)}50%{opacity:1;transform:scale(1.05)}70%{transform:scale(.9)}100%{opacity:1;transform:scale(1)}}
+.delay-1{animation-delay:.1s}.delay-2{animation-delay:.2s}.delay-3{animation-delay:.3s}.delay-4{animation-delay:.4s}.delay-5{animation-delay:.5s}
+
+/* -------------------------------------------------
+   Утиліти
+   ------------------------------------------------- */
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.focus-visible:focus{outline:2px solid var(--accent-secondary);outline-offset:2px;}
+
+/* -------------------------------------------------
+   Кастомний скролбар
+   ------------------------------------------------- */
+::-webkit-scrollbar{width:6px;height:6px;}
+::-webkit-scrollbar-track{background:transparent;margin:20px 0;border-radius:3px;}
+::-webkit-scrollbar-thumb{background:var(--accent-secondary);border-radius:3px;}
+::-webkit-scrollbar-thumb:hover{background:var(--accent-secondary);}
+::-webkit-scrollbar-button{display:none;}
+
+/* -------------------------------------------------
+   Запобігання скролу (модаль)
+   ------------------------------------------------- */
+.no-scroll{overflow:hidden;position:fixed;width:100%;height:100%;top:0;left:0;}
