@@ -36,7 +36,7 @@
     --light-text:      #fafafa;   /* колір для заголовків секцій      */
 
     /* ── ФОН СТОРІНКИ ---------------------------------------- */
-    --page-bg-image:   url('/assets/img/background/background-white-tems.svg');
+    --page-bg-image:   url('assets/img/background/background-white-tems.svg');
 
     /* ── ПОСИЛАННЯ ------------------------------------------- */
     --link-color:      #3498db;
@@ -100,7 +100,7 @@
     --light-text:      #fafafa;    /* саме для заголовків секцій */
 
     /* ФОН СТОРІНКИ */
-    --page-bg-image: url('/assets/img/background/background-black-tems.svg');
+    --page-bg-image: url('assets/img/background/background-black-tems.svg');
 
     /* ПОСИЛАННЯ */
     --link-color:#5dade2;
@@ -116,7 +116,7 @@
         --text-primary:#e9ecef;
         --text-secondary:#adb5bd;
         --text-muted:#6c757d;
-        --page-bg-image: url('/assets/img/background/background-black-tems.svg');
+        --page-bg-image: url('assets/img/background/background-black-tems.svg');
     }
 }
 
