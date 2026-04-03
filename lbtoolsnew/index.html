@@ -6,57 +6,7 @@
     <title>LB Tools</title>
 
 
-    <script>
-     /*  assets/js/base-path.js  ---------------------------------------------
-        Універсальний скрипт, що:
-        1️⃣ визначає «корінь сайту» (домашню папку репозиторія);
-        2️⃣ створює <base href="…"> і вставляє його першим у <head>;
-        3️⃣ додає глобальну функцію window.basePath(url), якою можна
-            сформувати абсолютний шлях у JavaScript (необов’язково).
-        ------------------------------------------------------------------- */
-        (() => {
-        /* ---------- 1️⃣ ЯК ВИЗНАЧИТИ ПУТЬ СКРИПТА ----------------------- */
-        const scriptUrl = document.currentScript?.src ||
-            (function () {
-            const scripts = document.getElementsByTagName('script');
-            return scripts[scripts.length - 1].src;   // fallback для старих браузерів
-            })();
-
-        // Каталог скрипта, наприклад
-        //   https://example.com/my-repo/assets/js/
-        //   або https://example.com/assets/js/
-        let base = scriptUrl.replace(/[^/]*$/, '');   // залишаємо лише каталог
-
-        /* ---------- 2️⃣ ОТРИМАТИ «КОРЕНЬ ПРОЕКТУ» ----------------------- */
-        // Видаляємо типові підкаталоги типу /assets/js/, /static/js/, /public/js/
-        // Якщо ваш скрипт лежить напряму у корені – залишиться просто «/».
-        base = base.replace(/\/(?:assets|static|public|)\/js\/?$/i, '/');
-
-        // Додаємо слеш, якщо його немає, і якщо залишився лише протокол+домен
-        if (!base.endsWith('/')) base += '/';
-        if (/^https?:\/\/[^/]+$/.test(base)) base += '/';
-
-        /* ---------- 3️⃣ ВСТАВИТИ <base> ----------------------------------- */
-        const baseEl = document.createElement('base');
-        baseEl.href = base;               // <base href="…">
-        const head = document.head;
-        head.insertBefore(baseEl, head.firstChild); // Першим у <head>
-
-        /* ---------- 4️⃣ Додати допоміжну функцію (необов’язково) ------- */
-        // Використовується, коли треба сформувати URL у JS‑коді
-        window.basePath = (url = '') => {
-            // Якщо вже абсолютний (починається протоколом) – нічого не змінюємо
-            if (/^[a-z][a-z0-9+.-]*:/.test(url)) return url;
-
-            // Якщо починається з «/», це шлях від кореня сайту, а не від кореня домену
-            if (url.startsWith('/')) return new URL(url.slice(1), base).href;
-
-            // Інакше просто додаємо до бази
-            return new URL(url, base).href;
-        };
-        })();
-
-    </script>
+    
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/header.css">
