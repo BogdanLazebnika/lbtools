@@ -1,0 +1,144 @@
+# ============================================================
+# 🔧 ОСНОВНІ НАЛАШТУВАННЯ
+# ============================================================
+
+# Увімкнення rewrite engine
+RewriteEngine On
+
+# Базовий шлях (якщо сайт не в корені домену, змінити)
+# RewriteBase /
+
+# ============================================================
+# 🚀 СТИСНЕННЯ (Gzip/Brotli)
+# ============================================================
+
+# Gzip стиснення
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml application/rss+xml image/svg+xml
+    AddOutputFilterByType DEFLATE font/ttf font/otf font/woff font/woff2
+    AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-otf application/x-font-woff application/x-font-woff2
+</IfModule>
+
+# Brotli стиснення (якщо доступне)
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# ============================================================
+# ⚡ КЕШУВАННЯ (прискорює повторні візити)
+# ============================================================
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Зображення (кеш на 1 рік)
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS та JS (кеш на 1 місяць)
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    
+    # Шрифти (кеш на 1 рік)
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    
+    # HTML (кеш на 1 день)
+    ExpiresByType text/html "access plus 1 day"
+    
+    # XML та інше
+    ExpiresByType application/xml "access plus 0 seconds"
+    ExpiresByType application/rss+xml "access plus 1 hour"
+</IfModule>
+
+# Кешування через заголовки
+<IfModule mod_headers.c>
+    # Статичні файли
+    <FilesMatch "\.(ico|jpg|jpeg|png|gif|webp|svg|css|js|woff|woff2|ttf|eot)$">
+        Header set Cache-Control "max-age=2592000, public, immutable"
+    </FilesMatch>
+    
+    # HTML файли
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "max-age=86400, public, must-revalidate"
+    </FilesMatch>
+</IfModule>
+
+# ============================================================
+# 🔒 БЕЗПЕКА
+# ============================================================
+
+# Захист від доступу до .htaccess та .htpasswd
+<FilesMatch "^\.ht">
+    Require all denied
+</FilesMatch>
+
+# Захист від перегляду папок
+Options -Indexes
+
+# Захист від XSS атак
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-Content-Type-Options "nosniff"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# Заборона доступу до прихованих файлів
+RedirectMatch 403 /\..*$
+
+# ============================================================
+# 🌐 ПЕРЕСПРЯМУВАННЯ
+# ============================================================
+
+# Переспрямування з www на без www (або навпаки - вибери один)
+# Варіант 1: www → без www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Варіант 2: без www → www (розкоментуй якщо потрібно)
+# RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$ [NC]
+# RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# HTTP → HTTPS (обов'язково!)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# ============================================================
+# 📄 КАСТОМНІ СТОРІНКИ ПОМИЛОК
+# ============================================================
+
+ErrorDocument 404 /error/404.html
+ErrorDocument 403 /error/403.html
+ErrorDocument 500 /error/500.html
+
+# ============================================================
+# 🚫 ЗАБОРОНА ДОСТУПУ ДО СИСТЕМНИХ ФАЙЛІВ
+# ============================================================
+
+<FilesMatch "\.(ini|log|sh|sql|bak|backup|md|txt)$">
+    Require all denied
+</FilesMatch>
+
+# Захист wp-config.php та подібних (якщо використовуєш WordPress)
+<FilesMatch "(wp-config|config|settings)\.php">
+    Require all denied
+</FilesMatch>
+
+# ============================================================
+# 📦 ПОДОВЖЕННЯ ТЕРМІНУ ДІЇ ЗАГОЛОВКІВ
+# ============================================================
+
+<IfModule mod_headers.c>
+    Header unset ETag
+    FileETag None
+</IfModule>

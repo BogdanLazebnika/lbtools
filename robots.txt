@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://lbtools.site/sitemap.xml
+Disallow: /assets/
+Disallow: /tmp/

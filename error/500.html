@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Сторінку не знайдено | LB Tools</title>
+    <meta name="robots" content="noindex, follow">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .error-container {
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 120px;
+            margin-bottom: 20px;
+            text-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+        }
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        a {
+            display: inline-block;
+            background: white;
+            color: #2c3e50;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 40px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 80px; }
+            h2 { font-size: 24px; }
+            p { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>500</h1>
+        <h2>Сторінку не знайдено</h2>
+        <p>На жаль, сторінка, яку ви шукаєте, не існує або була переміщена.</p>
+        <a href="/">🏠 Повернутися на головну</a>
+    </div>
+</body>
+</html>

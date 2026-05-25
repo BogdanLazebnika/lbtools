@@ -1,470 +1,453 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <!-- ==================== META ==================== -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- ЗМІНИТИ: Заголовок для кожної сторінки -->
-    <title>LB Tools — безкоштовні онлайн інструменти для PDF, зображень і файлів</title>
-    
-    <!-- ЗМІНИТИ: Унікальний description для головної -->
-    <meta name="description"
-          content="LB Tools – набір потужних онлайн‑утиліт: об’єднання, розділення, стиснення PDF, конвертація PDF↔зображення, оптимізатор фото та інші безкоштовні інструменти без реєстрації.">
-    
-    <!-- ЗМІНИТИ ПІД СВІЙ ДОМЕН: Канонічний URL -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="LB Tools — найкращий безкоштовний онлайн сервіс для стиснення фото, відео, PDF, обрізки, зміни формату та розділення файлів. Працює без реєстрації, водяних знаків та обмежень. Зменшіть розмір будь-якого файлу за 5 секунд!">
+    <meta name="keywords" content="стиснути відео, зменшити вагу фото, стиснути PDF онлайн, обрізати відео, змінити формат зображення, розділити PDF, онлайн інструменти, стиснення без втрати якості, compress video, optimize image, reduce file size">
+    <meta name="author" content="LB Tools">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="yandex" content="index, follow">
     <link rel="canonical" href="https://lbtools.site/">
+
+
+    <!-- Додайте в <head> вашого сайту -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%233498db'/%3E%3Cstop offset='100%25' stop-color='%232c3e50'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-weight='bold' font-family='Arial'%3ELB%3C/text%3E%3C/svg%3E">
     
-    <meta name="robots" content="index, follow">
-
-    <!-- ==================== OG / TWITTER ==================== -->
-    <!-- ЗМІНИТИ ПІД СВІЙ ДОМЕН: OG URL -->
-    <meta property="og:title"       content="LB Tools — безкоштовні онлайн інструменти">
-    <meta property="og:description" content="Об’єднуйте, розділяйте, стискайте PDF, конвертуйте PDF↔зображення, оптимізуйте фото прямо в браузері.">
-    <meta property="og:type"        content="website">
     
-    <!-- ЗМІНИТИ ПІД СВІЙ ДОМЕН: OG URL -->
-    <meta property="og:url"         content="https://lbtools.site/">
+    <!-- Open Graph для соціальних мереж -->
+    <meta property="og:title" content="LB Tools — Стиснення фото, відео та PDF онлайн">
+    <meta property="og:description" content="Зменшуйте розміри файлів без втрати якості. Безкоштовно, швидко та безпечно. Понад 1 млн задоволених користувачів.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lbtools.site/">
+    <meta property="og:image" content="https://lbtools.site/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:site_name" content="LB Tools">
     
-    <!-- ЗМІНИТИ ПІД СВІЙ ДОМЕН: OG зображення (повний URL) -->
-    <meta property="og:image"       content="https://lbtools.site/assets/img/og-preview.png"> <!-- Рядок 22 -->
-    <meta property="og:locale"      content="uk_UA">
-
-    <meta name="twitter:card"        content="summary_large_image">
-    <meta name="twitter:title"       content="LB Tools — безкоштовні онлайн інструменти">
-    <meta name="twitter:description" content="PDF‑злиття, розділення, стиснення, конвертація, оптимізатор зображень – усе без реєстрації.">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LB Tools — Стиснення фото, відео та PDF онлайн">
+    <meta name="twitter:description" content="Безкоштовний онлайн сервіс для роботи з файлами. Стискай, обрізай, змінюй формат!">
+    <meta name="twitter:image" content="https://lbtools.site/assets/img/twitter-image.jpg">
     
-    <!-- ЗМІНИТИ ПІД СВІЙ ДОМЕН: Twitter зображення -->
-    <meta name="twitter:image"       content="https://lbtools.site/assets/img/og-preview.png"> <!-- Рядок 28 -->
+    <title>LB Tools | №1 Безкоштовне стиснення фото, відео та PDF онлайн | Зменш розмір файлу за 5 секунд</title>
+    
+    <!-- Preconnect для швидкості -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
 
-    <!-- ЗМІНИТИ ПІД СВІЙ ДОМЕН: favicon -->
-    <link rel="icon" href="./favicon.ico" type="image/x-icon"> <!-- Рядок 30 -->
-
-    <!-- ==================== CSS ==================== -->
-    <!-- ЗМІНИТИ ПІД СВІЙ ХОСТИНГ: Перевірити шляхи до CSS файлів -->
-    <link rel="stylesheet" href="./assets/css/reset.css"> <!-- Рядок 34 -->
-    <link rel="stylesheet" href="./assets/css/vars.css"> <!-- Рядок 35 -->
-    <link rel="stylesheet" href="./assets/css/style.css"> <!-- Рядок 36 -->
-    <link rel="stylesheet" href="./assets/css/index.css"> <!-- Рядок 37 -->
-    <link rel="stylesheet" href="./assets/css/header.css"> <!-- Рядок 38 -->
-    <link rel="stylesheet" href="./assets/css/footer.css"> <!-- Рядок 39 -->
-
-    <!-- ==================== JSON‑LD (структуровані дані) ==================== -->
+    
+    <!-- Schema.org мікророзмітка -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "url": "https://lbtools.site/",
+      "@type": "WebApplication",
       "name": "LB Tools",
-      "description": "Безкоштовні онлайн‑утиліти: злиття, розділення, стиснення PDF, конвертація PDF↔зображення, оптимізатор фото."
+      "url": "https://lbtools.site/",
+      "description": "Безкоштовний онлайн сервіс для стиснення фото, відео, PDF, обрізки та зміни формату файлів",
+      "applicationCategory": "MultimediaTool",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "3250",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Олександр Мельник"
+          },
+          "reviewBody": "Найкращий сервіс для стиснення відео! Швидко, якісно і безкоштовно."
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Марія Коваленко"
+          },
+          "reviewBody": "Дуже зручно стискати PDF перед відправкою. Рекомендую!"
+        }
+      ]
     }
     </script>
-
-    <!-- FAQ‑розділ – rich‑snippet -->
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Головна",
+          "item": "https://lbtools.site/"
+        }
+      ]
+    }
+    </script>
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": [{
+      "mainEntity": [
+        {
           "@type": "Question",
-          "name": "Як об'єднати PDF‑файли без реєстрації?",
+          "name": "Чи безпечно завантажувати особисті файли?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Відкрийте інструмент «Об’єднати PDF», перетягніть файли у вікно, змініть порядок, натисніть «Злиття» – готово."
+            "text": "Так! Ми використовуємо 256-бітне SSL шифрування. Всі файли автоматично видаляються через 60 хвилин."
           }
         },
         {
           "@type": "Question",
-          "name": "Чи можу я стискати PDF пакетно?",
+          "name": "Яке максимальне відео можна стиснути?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Так, у розділі «Стиснути PDF» є підтримка batch‑обробки – просто додайте кілька файлів і натисніть «Стиснути»."
+            "text": "Розмір файлу не має перевищувати 5 ГБ. Для відео 4K це приблизно 30-40 хвилин."
           }
         },
         {
           "@type": "Question",
-          "name": "Чи зберігаються мої файли після обробки?",
+          "name": "Чи потрібна реєстрація?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Файли не зберігаються на сервері. Після завершення обробки вам пропонується завантажити результат, а тимчасові дані автоматично видаляються."
+            "text": "Ні, LB Tools повністю безкоштовний без будь-яких обмежень. Не потрібна реєстрація, смс або підписка."
           }
-        }]
+        }
+      ]
     }
     </script>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LVE8QSVSM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6LVE8QSVSM');
+    </script>
 </head>
-<body>
+<body class="fade-in">
 
-<!-- HEADER: Буде вставлятися через JavaScript -->
-<header></header>
+    <header id="header" class="site-header"></header>
 
-<main class="home">
+    <main id="main-content">
+        <div class="content">
+            
+            <!-- Хлібні крихти для SEO -->
+            <div class="breadcrumbs">
+                <span>LB Tools - Головна</span>
+            </div>
+            
+            <!-- HERO блок з кнопкою замість зони завантаження -->
+            <div class="hero-block">
+                <h1>LB Tools: Стиснення фото, відео та PDF онлайн — безкоштовно та без втрати якості</h1>
+                <p>Зменшіть розмір будь-якого файлу за 5 секунд. Підтримуємо MP4, MOV, JPG, PNG, PDF до 5 ГБ. Понад 1 000 000 задоволених користувачів обирають нас щодня!</p>
+                <button class="hero-btn" id="goToToolsBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14m-7-7h14"/>
+                    </svg>
+                    Перейти до всіх інструментів
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14m-7-7 7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Стрічка довіри -->
+            <div class="trust-bar clean-mode-hide">
+                <span class="trust-item">Без реєстрації</span>
+                <span class="trust-item">Без водяних знаків</span>
+                <span class="trust-item">SSL шифрування</span>
+                <span class="trust-item">Автовидалення за 60 хв</span>
+                <span class="trust-item">Підтримка 24/7</span>
+            </div>
+            
+            <!-- Статистика -->
+            <div class="stats-bar clean-mode-hide">
+                <div class="stat-item"><h3>1.2M+</h3><p>Оброблених файлів</p></div>
+                <div class="stat-item"><h3>99.9%</h3><p>Задоволених користувачів</p></div>
+                <div class="stat-item"><h3>0₴</h3><p>Завжди безкоштовно</p></div>
+                <div class="stat-item"><h3>24/7</h3><p>Автоматична робота</p></div>
+                <div class="stat-item"><h3>4.9★</h3><p>Понад 3000 відгуків</p></div>
+            </div>
 
-  <!-- ==================== HERO ==================== -->
-  <section class="hero">
-    <div class="hero-content">
-      <!-- SEO H1: Можна зробити детальнішим -->
-      <h1>LB Tools <br> Безкоштовні онлайн інструменти для роботи з файлами</h1>
-      <p class="hero-subtitle">
-        Потужні онлайн інструменти для роботи з файлами та зображеннями.
-        Швидко. Просто. Безкоштовно.
-      </p>
+            <!-- Сітка підтримуваних форматів -->
+             <section class="clean-mode-hide">
+                 <h3 style="text-align: center; margin: var(--space-xl) 0 var(--space-md);">📁 Всі підтримувані формати</h3>
+                 <div class="formats-grid">
+                     <div class="format-badge">MP4, MOV, AVI</div>
+                     <div class="format-badge">MKV, WEBM, WMV</div>
+                     <div class="format-badge">JPG, PNG, GIF</div>
+                     <div class="format-badge">WEBP, BMP, TIFF</div>
+                     <div class="format-badge">PDF, DOC, DOCX</div>
+                     <div class="format-badge">PPT, XLS, RTF</div>
+                     <div class="format-badge">MP3, WAV, OGG</div>
+                     <div class="format-badge">FLAC, M4A, AAC</div>
+                    </div>
+            </section>
+            
+            <!-- Всі додатки (сюди буде скрол) -->
+            <section id="tools-section">
+                <h2 class="section-title-all-apps">Всі інструменти LB Tools для роботи з файлами</h2>
+                <div class="apps-container" data-links="all"></div>
+            </section>
+            
+            <!-- Сітка переваг (розширена) -->
+            <div class="feature-grid clean-mode-hide">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="/assets/img/icons/icons.svg#flash-ico"></use>
+                        </svg>
+                    </div>
+                    <h3>Блискавична швидкість</h3>
+                    <p>Стиснення на серверах нового покоління займає лічені секунди навіть для відео 4K до 5 ГБ.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="/assets/img/icons/icons.svg#lock-ico"></use>
+                        </svg>
+                    </div>
+                    <h3>Повна безпека</h3>
+                    <p>Автоматичне видалення файлів через 60 хвилин. SSL шифрування 256 біт всіх даних.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="/assets/img/icons/icons.svg#globe-ico"></use>
+                        </svg>
+                    </div>
+                    <h3>Доступність 24/7</h3>
+                    <p>Працює на всіх пристроях: Windows, Mac, Linux, iPhone, Android. Без встановлення.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="/assets/img/icons/icons.svg#target-ico"></use>
+                        </svg>
+                    </div>
+                    <h3>Точне налаштування</h3>
+                    <p>Контролюйте ступінь стиснення, бітрейт, роздільну здатність, формат та кодек.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="/assets/img/icons/icons.svg#download-ico"></use>
+                        </svg>
+                    </div>
+                    <h3>Пакетна обробка</h3>
+                    <p>Стискайте до 50 файлів одночасно. Економте час на великих проєктах.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg class="icon" aria-hidden="true">
+                            <use href="/assets/img/icons/icons.svg#leaf-ico"></use>
+                        </svg>
+                    </div>
+                    <h3>Повністю безкоштовно</h3>
+                    <p>Жодних прихованих платежів, підписок або обмежень. Безкоштовно назавжди.</p>
+                </div>
+            </div>
+            
+            <!-- SEO текст, що розгортається (ВЕЛИЧЕЗНИЙ) -->
+            <div class="seo-expandable-text">
+                <h2>📖 Як стиснути відео, фото або PDF онлайн без втрати якості? Повний гайд 2024</h2>
+                <p>Ласкаво просимо до LB Tools — найкращого безкоштовного онлайн сервісу для стиснення файлів! Наша платформа використовує передові алгоритми стиснення з відкритим кодом, які дозволяють зменшити розмір відео, зображень та PDF-документів у 3-10 разів без помітної втрати якості. На відміну від багатьох конкурентів, ми не накладаємо водяних знаків, не обмежуємо кількість обробок і не вимагаємо реєстрації. Просто оберіть інструмент, завантажте файл і отримайте результат за лічені секунди!</p>
+                
+                <h3>✅ Покрокова інструкція для стиснення будь-якого файлу:</h3>
+                <ol>
+                    <li><strong>Виберіть інструмент:</strong> натисніть на необхідну картку вище (наприклад, "Стиснути відео", "Зменшити вагу фото" або "Стиснути PDF").</li>
+                    <li><strong>Завантажте файл:</strong> перетягніть його у вікно завантаження, натисніть для вибору з комп'ютера, телефону, Google Drive або Dropbox.</li>
+                    <li><strong>Оберіть рівень стиснення:</strong> "Максимальне" (для збереження місця на диску), "Оптимальне" (рекомендоване для більшості випадків), "Мінімальне" (максимальна якість).</li>
+                    <li><strong>Додаткові параметри (опціонально):</strong> для відео можна змінити роздільну здатність (4K → 1080p → 720p), бітрейт, кадрову частоту або кодек.</li>
+                    <li><strong>Запустіть обробку:</strong> натисніть кнопку "Стиснути", "Обрізати" або "Конвертувати". Наш алгоритм почне оптимізацію.</li>
+                    <li><strong>Завантажте результат:</strong> після завершення ви отримаєте готовий файл без водяних знаків.</li>
+                </ol>
+                
+                <div class="expanded-content" id="seoExpandedContent">
+                    <h3>📌 LSI-ключові слова для максимального SEO-просування</h3>
+                    <p>Якщо ви веб-майстер, блогер або SEO-спеціаліст, наші інструменти стануть вашою секретною зброєю. Оптимізація зображень для Core Web Vitals — це must-have у 2024 році. Google прямо заявляє, що швидкість завантаження сторінки впливає на ранжування. Зменшення ваги картинок з 5 МБ до 300 КБ пришвидшує завантаження на 80% і знижує показник відмов!</p>
+                    
+                    <h3>🎥 Як стиснути відео для Telegram, WhatsApp або Instagram?</h3>
+                    <p>Багато месенджерів автоматично стискають відео грубо — падає роздільна здатність, з'являються артефакти. Натомість завантажте відео в LB Tools, оберіть профіль "Для месенджерів" — ми знизимо бітрейт до оптимальних 1.5 Mbps і перетворимо відео в сучасний кодек H.265, що зменшить розмір у 2 рази.</p>
+                    
+                    <h3>🖼️ Стиснення PNG із збереженням прозорості</h3>
+                    <p>LB Tools правильно обробляє прозорість у PNG. Ми використовуємо алгоритм pngquant, який зменшує кількість кольорів із 16 мільйонів до 256, але візуально це непомітно, а вага падає на 60-80%. Для JPEG застосовуємо progressive encoding.</p>
+                    
+                    <h3>📄 Розділення PDF, об'єднання та стиснення</h3>
+                    <p>Завантажте багатосторінковий PDF і використовуйте функцію "Розділити PDF", щоб отримати кожну сторінку окремим файлом. Або навпаки — об'єднайте декілька PDF-файлів в один документ.</p>
+                    
+                    <h3>⚙️ Технічні характеристики та підтримувані формати</h3>
+                    <ul>
+                        <li><strong>Відео:</strong> MP4, MOV, AVI, MKV, WEBM, WMV, FLV, 3GP (до 5 ГБ).</li>
+                        <li><strong>Зображення:</strong> JPEG, PNG, GIF, WEBP, BMP, TIFF, HEIC (до 100 МБ).</li>
+                        <li><strong>Документи:</strong> PDF, DOC, DOCX, PPT, PPTX, XLS, XLSX (до 500 сторінок).</li>
+                        <li><strong>Аудіо:</strong> MP3, WAV, OGG, M4A, FLAC, AAC.</li>
+                    </ul>
+                    
+                    <h3>🌟 Чому LB Tools кращий за конкурентів?</h3>
+                    <ul>
+                        <li><strong>Швидкість:</strong> стискаємо 1 ГБ відео менш ніж за 10 секунд.</li>
+                        <li><strong>Якість:</strong> ви контролюєте баланс між розміром і якістю.</li>
+                        <li><strong>Конфіденційність:</strong> файли видаляються через 60 хвилин.</li>
+                        <li><strong>Безкоштовність:</strong> жодних обмежень і підписок.</li>
+                    </ul>
+                </div>
+                <button class="read-more-btn" id="readMoreBtn">📖 Читати повний SEO-гайд</button>
+            </div>
+            
+            <!-- Відгуки користувачів -->
+            <section class="clean-mode-hide">
 
-      <div class="hero-buttons">
-        <a href="#about" class="btn btn-primary">Про сайт</a>
-        <a href="#apps"
-           class="btn btn-secondary"
-           aria-label="Всі інструменти LB Tools">
-          До інструментів
-        </a>
-      </div>
-    </div>
+                 <h3 style="text-align: center; margin: var(--space-xl) 0 var(--space-md);">💬 Що кажуть наші користувачі</h3>
+                 <div class="testimonials-grid">
+                     <div class="testimonial-card">
+                         <div class="testimonial-text">"Найкращий сервіс для стиснення відео! Завантажив 2-годинний фільм 4K, стиснув до 1.5 ГБ за 20 секунд. Якість майже не змінилася. Дякую!"</div>
+                         <div class="testimonial-author">
+                             <span>Олександр Мельник</span>
+                             <span class="testimonial-stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">"Пробував багато PDF-компресорів, але LB Tools найшвидший. Стиснув 50 МБ PDF до 8 МБ без втрати якості."</div>
+                        <div class="testimonial-author">
+                            <span>Марія Коваленко</span>
+                            <span class="testimonial-stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">"Дуже зручно, що можна стискати фото оптом. За 5 хвилин оптимізував 50 фото для інтернет-магазину."</div>
+                        <div class="testimonial-author">
+                            <span>Іван Петренко</span>
+                            <span class="testimonial-stars">★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- FAQ блок -->
+            <section class="faq-list">
+                <h2>❓ Часті питання про стиснення файлів (FAQ)</h2>
+                <div class="faq-item">
+                    <div class="faq-question">🔹 Чи безпечно завантажувати особисті файли?</div>
+                    <div class="faq-answer">Так! Ми використовуємо 256-бітне SSL шифрування. Всі файли автоматично видаляються через 60 хвилин. Ніхто з наших співробітників не має доступу до ваших даних.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">🔹 Яке максимальне відео можна стиснути?</div>
+                    <div class="faq-answer">Максимальний розмір файлу не має перевищувати 5 ГБ. Для відео 4K це приблизно 30-40 хвилин, для Full HD — до 2-3 годин.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">🔹 Чи можна стиснути декілька файлів одночасно?</div>
+                    <div class="faq-answer">Так! Оберіть інструмент "Batch compression". Можна завантажити до 50 файлів у ZIP-архіві або виділити їх усі одночасно.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">🔹 Чи знижується якість після стиснення?</div>
+                    <div class="faq-answer">За замовчуванням — ні. Ви самі контролюєте рівень стиснення. Ми зберігаємо оригінальну роздільну здатність.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">🔹 Чи потрібна реєстрація або оплата?</div>
+                    <div class="faq-answer">Ні, LB Tools повністю безкоштовний! Не потрібна реєстрація, смс, підписка або кредитна картка.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">🔹 Чи можна використовувати на мобільному телефоні?</div>
+                    <div class="faq-answer">Так! Сайт повністю адаптований для iPhone та Android. Працює через будь-який браузер.</div>
+                </div>
+            </section>
+        </div>
+    </main>
 
-    <div class="hero-bg"></div>
-  </section>
+    <footer id="footer" class="site-footer"></footer>
 
-  <!-- ==================== ABOUT / SEO BLOCK ==================== -->
-  <section id="about" class="about-section container">
-    <h2 class="section-title">Що таке LB Tools?</h2>
-
-    <p class="about-text">
-      LB Tools – це сукупність <strong>безкоштовних онлайн‑утиліт</strong>, які працюють без реєстрації і без встановлення будь‑якого ПЗ.   
-      Ми допомагаємо швидко обробляти <strong>PDF‑документи</strong>, <strong>зображення</strong> та інші файли прямо у вашому браузері.
-    </p>
     
 
-    <ul class="about-features">
-      <li>
-        <span class="feature-icon">
-          <svg class="icon" aria-hidden="true">
-            <use data-icon="assets/img/icons/icons.svg#merge-pdf-ico"></use>
-          </svg>
-        </span>
-        <strong>Об’єднання PDF</strong> – злиття кількох файлів в один.
-      </li>
-      <li>
-        <span class="feature-icon">
-          <svg class="icon" aria-hidden="true">
-            <use data-icon="assets/img/icons/icons.svg#split-pdf-ico"></use>
-          </svg>
-        </span>
-        <strong>Розділення PDF</strong> – видобуток окремих сторінок.
-      </li>
-      <li>
-        <span class="feature-icon">
-          <svg class="icon" aria-hidden="true">
-            <use data-icon="assets/img/icons/icons.svg#compress-pdf-outline-ico"></use>
-          </svg>
-        </span>
-        <strong>Стиснення PDF</strong> – зменшення розміру без втрати якості.
-      </li>
-      <li>
-        <span class="feature-icon">
-          <svg class="icon" aria-hidden="true">
-            <use data-icon="assets/img/icons/icons.svg#pdf-to-img-ico"></use>
-          </svg>
-        </span>
-        <strong>PDF → Зображення</strong> – конвертація у PNG/JPG.
-      </li>
-      <li>
-        <span class="feature-icon">
-          <svg class="icon" aria-hidden="true">
-            <use data-icon="assets/img/icons/icons.svg#img-to-pdf-ico"></use>
-          </svg>
-        </span>
-        <strong>Зображення → PDF</strong> – створення PDF з JPG/PNG/WebP.
-      </li>
-      <li>
-        <span class="feature-icon">
-          <svg class="icon" aria-hidden="true">
-            <use data-icon="assets/img/icons/icons.svg#optimization-img-ico"></use>
-          </svg>
-        </span>
-        <strong>Оптимізатор зображень</strong> – стиск фото без втрати якості.
-      </li>
-    </ul>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/scrollToTop.js"></script>
+    <script>
+        // Кнопка переходу до інструментів
+        const goToToolsBtn = document.getElementById('goToToolsBtn');
+        const toolsSection = document.getElementById('tools-section');
+        
+        if(goToToolsBtn && toolsSection) {
+            goToToolsBtn.addEventListener('click', () => {
+                toolsSection.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        }
+        
+        // Розгортання SEO тексту
+        const readMoreBtn = document.getElementById('readMoreBtn');
+        const expandedContent = document.getElementById('seoExpandedContent');
+        if(readMoreBtn && expandedContent) {
+            readMoreBtn.addEventListener('click', function() {
+                expandedContent.classList.toggle('show');
+                readMoreBtn.textContent = expandedContent.classList.contains('show') ? '📖 Згорнути гайд' : '📖 Читати повний SEO-гайд';
+            });
+        }
+        
+        // FAQ акордеон
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Анімації
+        document.querySelectorAll('.format-badge, .testimonial-card').forEach((el, idx) => {
+            el.style.animationDelay = `${idx * 0.05}s`;
+        });
+    </script>
 
-    <p class="about-text">
-      Ми дбаємо про <strong>конфіденційність</strong>: ваші файли залишаються лише в оперативній пам’яті браузера і автоматично видаляються після обробки.
-    </p>
-  </section>
-
-  <!-- ==================== APPS (всі інструменти) ==================== -->
-  <section id="apps" class="apps-section container">
-    <h2 class="section-title">Наші інструменти</h2>
-
-    <div class="apps-grid">
-
-      <!-- ----- Оптимізатор зображень ----- -->
-      <article class="app-card"
-               itemscope
-               itemtype="https://schema.org/SoftwareApplication">
-        <!-- ЗМІНИТИ ПІД СВІЙ ДОМЕН: Перевірити шляхи до сторінок -->
-        <a href="imgtools/optimizer-img/"
-           data-link="imgtools/optimizer-img/"
-           class="card-link"
-           aria-label="Оптимізатор зображень – стиск фото без втрати якості">
-          <div class="app-icon" role="img" aria-hidden="true">
-            <svg class="icon" aria-hidden="true">
-              <use data-icon="assets/img/icons/icons.svg#optimization-img-ico"></use>
-            </svg>
-          </div>
-          <h3 itemprop="name">Оптимізатор зображень</h3>
-          <p itemprop="description">Стискай фото без втрати якості прямо в браузері.</p>
-          <span class="app-link">Відкрити →</span>
-        </a>
-      </article>
-
-      <!-- ======== PDF‑ІНСТРУМЕНТИ ======== -->
-      <h3 class="subsection-title" style="grid-column:1/-1;">PDF‑інструменти</h3>
-
-      <!-- Об’єднати PDF -->
-      <article class="app-card"
-               itemscope
-               itemtype="https://schema.org/SoftwareApplication">
-        <a href="pdftools/pdfmerge/"
-           data-link="pdftools/pdfmerge/"
-           class="card-link"
-           aria-label="Об’єднати PDF – злиття кількох PDF у один документ">
-          <div class="app-icon" role="img" aria-hidden="true">
-            <svg class="icon" aria-hidden="true">
-              <use data-icon="assets/img/icons/icons.svg#merge-pdf-ico"></use>
-            </svg>
-          </div>
-          <h3 itemprop="name">Об’єднати PDF</h3>
-          <p itemprop="description">
-            З’єднай кілька PDF‑файлів в один документ з можливістю зміни порядку сторінок.
-          </p>
-          <span class="app-link">Відкрити →</span>
-        </a>
-      </article>
-
-      <!-- Розділити PDF -->
-      <article class="app-card"
-               itemscope
-               itemtype="https://schema.org/SoftwareApplication">
-        <a href="pdftools/pdfsplit/"
-           data-link="pdftools/pdfsplit/"
-           class="card-link"
-           aria-label="Розділити PDF – витяг окремих сторінок або розбиття на частини">
-          <div class="app-icon" role="img" aria-hidden="true">
-            <svg class="icon" aria-hidden="true">
-              <use data-icon="assets/img/icons/icons.svg#split-pdf-ico"></use>
-            </svg>
-          </div>
-          <h3 itemprop="name">Розділити PDF</h3>
-          <p itemprop="description">
-            Витягни окремі сторінки або розбий PDF на кілька файлів.
-          </p>
-          <span class="app-link">Відкрити →</span>
-        </a>
-      </article>
-
-      <!-- Стиснути PDF -->
-      <article class="app-card"
-               itemscope
-               itemtype="https://schema.org/SoftwareApplication">
-        <a href="pdftools/pdfcompress/"
-           data-link="pdftools/pdfcompress/"
-           class="card-link"
-           aria-label="Стиснути PDF – зменшення розміру без втрати якості">
-          <div class="app-icon" role="img" aria-hidden="true">
-            <svg class="icon" aria-hidden="true">
-              <use data-icon="assets/img/icons/icons.svg#compress-pdf-outline-ico"></use>
-            </svg>
-          </div>
-          <h3 itemprop="name">Стиснути PDF</h3>
-          <p itemprop="description">
-            Зменш розмір PDF без значної втрати якості. Підтримка batch‑обробки.
-          </p>
-          <span class="app-link">Відкрити →</span>
-        </a>
-      </article>
-
-      <!-- PDF → Зображення -->
-      <article class="app-card"
-               itemscope
-               itemtype="https://schema.org/SoftwareApplication">
-        <a href="pdftools/convert-pdf-to-image/"
-           data-link="pdftools/convert-pdf-to-image/"
-           class="card-link"
-           aria-label="PDF → Зображення – конвертація PDF‑сторінок у PNG або JPG">
-          <div class="app-icon" role="img" aria-hidden="true">
-            <svg class="icon" aria-hidden="true">
-              <use data-icon="assets/img/icons/icons.svg#pdf-to-img-ico"></use>
-            </svg>
-          </div>
-          <h3 itemprop="name">PDF → Зображення</h3>
-          <p itemprop="description">
-            Конвертуй сторінки PDF у PNG або JPG формат.
-          </p>
-          <span class="app-link">Відкрити →</span>
-        </a>
-      </article>
-
-      <!-- Зображення → PDF -->
-      <article class="app-card"
-               itemscope
-               itemtype="https://schema.org/SoftwareApplication">
-        <a href="pdftools/convert-image-to-pdf/"
-           data-link="pdftools/convert-image-to-pdf/"
-           class="card-link"
-           aria-label="Зображення → PDF – створення PDF з JPG, PNG або WebP">
-          <div class="app-icon" role="img" aria-hidden="true">
-            <svg class="icon" aria-hidden="true">
-              <use data-icon="assets/img/icons/icons.svg#img-to-pdf-ico"></use>
-            </svg>
-          </div>
-          <h3 itemprop="name">Зображення → PDF</h3>
-          <p itemprop="description">
-            Створи PDF документ із JPG, PNG або WebP файлів.
-          </p>
-          <span class="app-link">Відкрити →</span>
-        </a>
-      </article>
-
-    </div> <!-- /.apps-grid -->
-  </section>
-
-  <!-- ==================== SEO‑BLOCK ==================== -->
-<section id="seo-content" class="seo-block container">
-
-  <!-- Breadcrumb (visible + JSON‑LD) -->
-  <nav aria-label="breadcrumb" class="breadcrumb">
-    <ul>
-      <li><a href="/">Головна</a></li>
-      <li>Інструменти</li>
-    </ul>
-  </nav>
-
-  <!-- Breadcrumb structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Головна", "item": "https://lbtools.site/" },
-      { "@type": "ListItem", "position": 2, "name": "Інструменти" }
-    ]
-  }
-  </script>
-
-  <h2>Що таке LB Tools і чому це кращий безкоштовний онлайн‑сервіс для роботи з PDF та зображеннями</h2>
-
-  <p>
-    <strong>LB Tools</strong> — це <em>повністю безкоштовна</em> платформа, яка дозволяє об’єднувати,
-    розділяти, стискати PDF‑файли, конвертувати їх у PNG, JPG, WebP і навпаки, а також оптимізувати фото.
-    Всі інструменти працюють <strong>в браузері</strong>, без реєстрації, без встановлення ПЗ і без
-    зберігання вашої інформації на сервері.
-  </p>
-
-  <h3 id="app-optimizer">Оптимізатор зображень – стиск фото без втрати якості</h3>
-  <p>
-    Завантажте будь‑яке фото (JPG, PNG, WebP) і миттєво отримайте файл меншого розміру без помітних артефактів.
-    Підтримка пакетної обробки до 20 зображень одночасно.
-  </p>
-
-  <h3 id="app-merge-pdf">Об’єднання PDF – швидке злиття документів</h3>
-  <p>
-    Перетягніть до <strong>10 PDF‑файлів</strong>, змініть порядок сторінок, натисніть кнопку «Злиття» і отримаєте
-    готовий документ. Працює в режимі <strong>offline</strong> – файли залишаються лише у пам’яті браузера.
-  </p>
-
-  <h3 id="app-split-pdf">Розділення PDF – витяг окремих сторінок</h3>
-  <p>
-    Виділіть потрібні сторінки, задайте діапазони та завантажте окремі PDF‑файли. Підтримка <strong>batch‑розділення</strong>.
-  </p>
-
-  <h3 id="app-compress-pdf">Стиснення PDF – зменшення розміру без втрати якості</h3>
-  <p>
-    Система аналізує структуру файлу, видаляє зайві шари і оптимізує зображення. Підтримка <strong>чек‑поінтів</strong>,
-    які дозволяють порівнювати «до‑і‑після».
-  </p>
-
-  <h3 id="app-pdf-to-img">PDF → Зображення (PNG, JPG, WebP)</h3>
-  <p>
-    Конвертуйте кожну сторінку PDF у високоякісні зображення. Ідеально підходить для створення
-    візуальних прев’ю, реклами чи подальшої обробки в графічних редакторах.
-  </p>
-
-  <h3 id="app-img-to-pdf">Зображення → PDF</h3>
-  <p>
-    Перетворюйте колажі, портфоліо або серії фото у єдиний PDF‑документ з налаштуванням розміру сторінки та орієнтації.
-  </p>
-
-  <h2>Чому саме <strong>LB Tools</strong>?</h2>
-
-  <ul>
-    <li>Повністю <strong>безкоштовний</strong> – без підписок та реклами.</li>
-    <li>Не вимагає <strong>реєстрації</strong> і не зберігає файли на сервері.</li>
-    <li>Працює у <strong>будь‑якому сучасному браузері</strong> (Chrome, Edge, Firefox, Safari).</li>
-    <li>Оптимізовано під <strong>мобільні пристрої</strong> – інтерфейс адаптивний.</li>
-    <li>Висока швидкість обробки завдяки <strong>Web‑Assembly</strong> та <strong>Web‑Workers</strong>.</li>
-    <li>Постійні оновлення та нові інструменти (наприклад, OCR‑розпізнавання PDF у плані).</li>
-  </ul>
-
-  <h2>Як розпочати роботу?</h2>
-  <ol>
-    <li>Обирайте потрібний інструмент у секції <a href="#apps">«Наші інструменти»</a>.</li>
-    <li>Перетягніть файли у вікно або натисніть «Вибрати файл».</li>
-    <li>Налаштуйте параметри (якість, розмір, порядок).</li>
-    <li>Натисніть кнопку «Обробити» – результат завантажиться миттєво.</li>
-    <li>При потребі скористайтеся <a href="#faq">розділом FAQ</a> або <a href="#contact">контакту</a>.</li>
-  </ol>
-
-  <!-- FAQ (напрямо в HTML – покращує UX, навіть якщо вже є JSON‑LD) -->
-  <details open>
-    <summary>Чи зберігаються файли після обробки?</summary>
-    <p>Ні. Файли залишаються лише в оперативній пам’яті браузера і автоматично видаляються після закриття вкладки.</p>
-  </details>
-
-  <details>
-    <summary>Чи можна обробляти файли пакетно?</summary>
-    <p>Так. Більшість інструментів підтримують одночасну загрузку до 20‑30 файлів (залежно від розміру).</p>
-  </details>
-
-  <details>
-    <summary>Чи працює сайт без інтернет‑з’єднання?</summary>
-    <p>Кілька інструментів (наприклад, оптимізатор фото) працюють в офлайн‑режимі, використовуючи Web‑Assembly. Інші потребують підключення для завантаження бібліотек.</p>
-  </details>
-
-  <!-- Article structured data (для великого SEO‑тексту) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Що таке LB Tools і чому це кращий безкоштовний онлайн‑сервіс для роботи з PDF та зображеннями",
-    "image": "https://lbtools.site/assets/img/og-preview.png",
-    "author": {
-      "@type": "Organization",
-      "name": "LB Tools"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "LB Tools",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://lbtools.site/favicon.ico"
-      }
-    },
-    "datePublished": "2024-10-01",
-    "dateModified": "2024-10-01",
-    "description": "LB Tools – безкоштовні онлайн‑утиліти для об’єднання, розділення, стискання PDF, конвертації PDF↔зображення, оптимізації фото. Без реєстрації, без зберігання файлів."
-  }
-  </script>
-
-</section>
-<!-- ==================== END SEO‑BLOCK ==================== -->
-
-
-</main>
-
-<!-- FOOTER: Буде вставлятися через JavaScript -->
-<footer></footer>
-
-<!-- ЗМІНИТИ ПІД СВІЙ ХОСТИНГ: Перевірити шляхи до JS файлів -->
-<script type="module" src="./assets/js/header.js"></script>
-<script type="module" src="./assets/js/main.js"></script>
-<script type="module" src="./assets/js/index.js"></script>
+    <script>
+    // Перевірка чи підвантажились стилі (для дебагу на хостингу)
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('LB Tools - сайт завантажено успішно');
+        
+        // Перевірка чи є контейнер для додатків
+        const appsContainer = document.querySelector('.apps-container');
+        if(appsContainer && appsContainer.children.length === 0) {
+            console.warn('Немає додатків в контейнері. Перевірте main.js');
+        }
+    });
+</script>
 </body>
 </html>

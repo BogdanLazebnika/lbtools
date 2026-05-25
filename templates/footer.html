@@ -1,0 +1,136 @@
+<div class="site-footer">
+    <div class="footer-content">
+        <!-- Головна сітка футера -->
+        <div class="footer-main-grid">
+
+            <!-- Навігаційна секція -->
+            <div class="footer-section footer-navigation-section">
+                <h2 class="footer-section-title section-title-footer">Навігація</h2>
+                <nav class="footer-nav">
+                    <ul class="footer-menu-list" id="footer-menu">
+                        <li class="footer-menu-item">
+                            <a href="/index.html" class="footer-menu-link footer-link-primary">Головна</a>
+                        </li>
+                        <li class="footer-menu-item footer-menu-item-apps">
+                            <a class="footer-menu-link footer-link-primary footer-link-primary-apps">Інструменти<span class="footer-arrow-btn">▼</span></a>
+                            <!-- Секція всіх додатків -->
+                            <section class="footer-section footer-apps-section">
+                                <h2 class="footer-section-title section-title-footer">Інструменти</h2>
+                                <div class="footer-apps-container" data-links="footer">
+                                    <!-- Динамічно заповнюється -->
+                                </div>
+                            </section>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="/about.html" class="footer-menu-link footer-link-primary">Про нас</a>
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="/contact.html" class="footer-menu-link footer-link-primary">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Секція соціальних мереж -->
+            <div class="footer-section footer-social-section">
+                <h3 class="footer-section-title section-title-footer">Слідкуйте за нами</h3>
+                <div class="social-links-grid">
+                    <a href="#" class="social-link social-link-facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link social-link-twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link social-link-instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link social-link-telegram" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="#" class="social-link social-link-youtube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+           <!-- Секція підтримки автора -->
+            <div class="footer-section footer-support-section">
+                <h3 class="footer-section-title section-title-footer">Підтримати автора</h3>
+
+                <div class="support-methods">
+                    <a href="#" class="support-link support-link-patreon" aria-label="Patreon">
+                        <i class="fab fa-patreon"></i>
+                        <span>Patreon</span>
+                    </a>
+
+                    <a href="#" class="support-link support-link-buymeacoffee" aria-label="Buy Me a Coffee">
+                        <i class="fas fa-coffee"></i>
+                        <span>Buy Me a Coffee</span>
+                    </a>
+
+                    <a href="#" class="support-link support-link-paypal" aria-label="PayPal">
+                        <i class="fab fa-paypal"></i>
+                        <span>PayPal</span>
+                    </a>
+
+                    <a href="#" class="support-link support-link-crypto" aria-label="Crypto">
+                        <i class="fab fa-bitcoin"></i>
+                        <span>Crypto</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Секція підписки -->
+            <div class="footer-section footer-newsletter-section">
+                <h3 class="footer-section-title section-title-footer">Отримуйте оновлення</h3>
+                <form class="newsletter-form">
+                    <div class="newsletter-input-group">
+                        <input type="email" class="newsletter-input" placeholder="Ваша email адреса" required>
+                        <button type="submit" class="newsletter-submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Підписатися
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Нижня частина футера -->
+        <div class="footer-bottom-section">
+            <div class="footer-bottom-content">
+                <div style="text-align: center; margin: var(--space-3xl) 0 var(--space-xl); font-size: var(--text-xs); color: var(--text-muted);">
+                    <p>LB Tools — ваш надійний помічник для стиснення фото, відео, PDF та інших файлів. Працюємо з 2020 року. Понад 1 000 000 задоволених користувачів у 150+ країнах світу.</p>
+                    <p style="margin-top: var(--space-sm);">© 2024 LB Tools. Усі права захищено. Використання матеріалів дозволено тільки з посиланням на джерело.</p>
+                </div>
+                <p class="footer-copyright">
+                    © <span id="current-year" class="current-year-text"></span> 
+                    <span class="site-name">LB tools</span>. Всі права захищено.
+                </p>
+                
+                <div class="footer-legal-links">
+                    <a href="/privacy.html" class="legal-link">Політика конфіденційності</a>
+                    <span class="link-separator">|</span>
+                    <a href="/terms.html" class="legal-link">Умови використання</a>
+                    <span class="link-separator">|</span>
+                    <a href="/cookies.html" class="legal-link">Cookie</a>
+                    <span class="link-separator">|</span>
+                    <a href="/disclaimer.html" class="legal-link">Відмова від відповідальності</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+
+
+
+
+
+
+<!-- Підключення Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

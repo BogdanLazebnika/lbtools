@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<!-- ========================================================= -->
+<!-- ⭐ SEO МЕТА-ТЕГИ (ЗМІНЮЮТЬСЯ ПІД КОЖЕН ЗАСТОСУНОК) -->
+<!-- ========================================================= -->
+
+<title>❌[НАЗВА_ЗАСТОСУНКУ]❌ | Онлайн інструмент для ❌[ТИП_ФАЙЛУ]❌ | LB Tools</title>
+<meta name="description" content="❌[КОРОТКИЙ_ОПИС_ДІЇ]❌ ❌[ТИП_ФАЙЛУ]❌ онлайн. ❌[ОСНОВНІ_ФУНКЦІЇ]❌ Безкоштовно, без реєстрації, без водяних знаків. ❌[УНІКАЛЬНА_ПЕРЕВАГА]❌">
+<meta name="keywords" content="❌[КЛЮЧОВІ_СЛОВА_1]❌, ❌[КЛЮЧОВІ_СЛОВА_2]❌, ❌[КЛЮЧОВІ_СЛОВА_3]❌, ❌[ТИП_ФАЙЛУ]❌ онлайн, безкоштовно">
+<meta name="author" content="LB Tools">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://lbtools.site/❌[КАТЕГОРІЯ]❌/❌[СЛАГ_ІНСТРУМЕНТУ]❌">
+
+<!-- Open Graph / Social Media -->
+<meta property="og:title" content="LB Tools | ❌[НАЗВА_ЗАСТОСУНКУ]❌ – ❌[ДІЯ]❌ ❌[ТИП_ФАЙЛУ]❌ онлайн">
+<meta property="og:description" content="❌[РОЗШИРЕНИЙ_ОПИС_ДЛЯ_SOCIAL]❌">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lbtools.site/❌[КАТЕГОРІЯ]❌/❌[СЛАГ_ІНСТРУМЕНТУ]❌">
+<meta property="og:image" content="https://lbtools.site/assets/img/og-❌[СЛАГ_ІНСТРУМЕНТУ]❌.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="LB Tools">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="❌[НАЗВА_ЗАСТОСУНКУ]❌ – ❌[ДІЯ]❌ ❌[ТИП_ФАЙЛУ]❌">
+<meta name="twitter:description" content="❌[КОРОТКИЙ_ОПИС_ДЛЯ_TWITTER]❌">
+<meta name="twitter:image" content="https://lbtools.site/assets/img/twitter-❌[СЛАГ_ІНСТРУМЕНТУ]❌.jpg">
+
+<!-- Technical SEO -->
+<meta name="theme-color" content="#3498db">
+
+<!-- Styles (глобальні, однакові для всіх сторінок) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/assets/css/reset.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/header.css">
+<link rel="stylesheet" href="/assets/css/footer.css">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="/favicon.ico">
+
+<!-- ========================================================= -->
+<!-- ⭐ SCHEMA.ORG МІКРОРОЗМІТКА (ДИНАМІЧНА) -->
+<!-- ========================================================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "❌[НАЗВА_ЗАСТОСУНКУ]❌",
+  "description": "❌[РОЗШИРЕНИЙ_ОПИС_ДЛЯ_SCHEMA]❌",
+  "url": "https://lbtools.site/❌[КАТЕГОРІЯ]❌/❌[СЛАГ_ІНСТРУМЕНТУ]❌",
+  "applicationCategory": "❌[КАТЕГОРІЯ_ЗАСТОСУНКУ]❌",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "ratingCount": "❌[КІЛЬКІСТЬ_ВІДГУКІВ]❌"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Головна",
+      "item": "https://lbtools.site/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "❌[НАЗВА_КАТЕГОРІЇ_УКР]❌",
+      "item": "https://lbtools.site/❌[КАТЕГОРІЯ]❌"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "❌[НАЗВА_ЗАСТОСУНКУ]❌",
+      "item": "https://lbtools.site/❌[КАТЕГОРІЯ]❌/❌[СЛАГ_ІНСТРУМЕНТУ]❌"
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="fade-in">
+<header id="header" class="site-header"></header>
+
+<main id="main-content">
+<div class="content">
+
+<!-- ========================================================= -->
+<!-- ХЛІБНІ КРИХТИ (ДИНАМІЧНІ) -->
+<!-- ========================================================= -->
+<div class="breadcrumbs">
+  <a href="/">Головна</a> /
+  <a href="/❌[КАТЕГОРІЯ]❌">❌[НАЗВА_КАТЕГОРІЇ_УКР]❌</a> /
+  <span>❌[НАЗВА_ЗАСТОСУНКУ]❌</span>
+</div>
+
+<!-- ========================================================= -->
+<!-- HERO БЛОК (ДИНАМІЧНИЙ) -->
+<!-- ========================================================= -->
+<div class="hero-category">
+  <h1>❌[ЕМОДЖІ_ГЕРО]❌ ❌[НАЗВА_ЗАСТОСУНКУ]❌ – ❌[ДІЯ]❌ ❌[ТИП_ФАЙЛУ]❌ онлайн</h1>
+  <p>❌[РОЗШИРЕНИЙ_ОПИС_ГЕРО_1]❌ ❌[ДІЯ]❌ ❌[ТИП_ФАЙЛУ]❌ ❌[РОЗШИРЕНИЙ_ОПИС_ГЕРО_2]❌ ❌[ОСНОВНІ_ФУНКЦІЇ]❌. ❌[УНІКАЛЬНА_ПЕРЕВАГА]❌</p>
+</div>
+
+<!-- ========================================================= -->
+<!-- СТРІЧКА ДОВІРИ (СТАТИЧНА, ОДНАКОВА ДЛЯ ВСІХ) -->
+<!-- ========================================================= -->
+<div class="trust-bar-category clean-mode-hide">
+  <span class="trust-item-category">🆓 Безкоштовно</span>
+  <span class="trust-item-category">⚡ Пакетна обробка</span>
+  <span class="trust-item-category">🔒 Локальна робота</span>
+  <span class="trust-item-category">💧 Без водяних знаків</span>
+  <span class="trust-item-category">📱 Всі пристрої</span>
+  <span class="trust-item-category">📦 До 50 файлів</span>
+  <span class="trust-item-category">✨ Висока якість</span>
+  <span class="trust-item-category">⭐ 4.9/5</span>
+</div>
+
+<!-- ========================================================= -->
+<!-- СТАТИСТИКА КАТЕГОРІЇ (ДИНАМІЧНА) -->
+<!-- ========================================================= -->
+<div class="category-stats clean-mode-hide">
+  <div class="stat-card"><div class="stat-number">❌[КІЛЬКІСТЬ_ОБРОБЛЕНО]❌+</div><div>❌[ТИП_ФАЙЛУ]❌ оброблено</div></div>
+  <div class="stat-card"><div class="stat-number">99.9%</div><div>Задоволених</div></div>
+  <div class="stat-card"><div class="stat-number">50</div><div>Макс. файлів</div></div>
+  <div class="stat-card"><div class="stat-number">❌[КІЛЬКІСТЬ_ФОРМАТІВ]❌+</div><div>Форматів</div></div>
+  <div class="stat-card"><div class="stat-number">24/7</div><div>Доступність</div></div>
+</div>
+
+<!-- ========================================================= -->
+<!-- ⭐⭐⭐ ОСНОВНИЙ ЗАСТОСУНОК ⭐⭐⭐ -->
+<!-- ========================================================= -->
+<div class="app-container" id="appRoot">
+  <!-- 
+    ═══════════════════════════════════════════════════════════
+    🔥 СЮДИ ВСТАВЛЯЄТЬСЯ УНІКАЛЬНИЙ КОД КОЖНОГО ЗАСТОСУНКУ 🔥
+    ═══════════════════════════════════════════════════════════
+    
+    ТУТ МОЖЕ БУТИ:
+    - Свій HTML
+    - Свої стилі (<style>)
+    - Свої скрипти (<script>)
+    - Своя логіка обробки файлів
+    
+    НІЧОГО ЗОВНІШНЬОГО НЕ ЗАЛЕЖИТЬ ВІД ГЛОБАЛЬНИХ СТИЛІВ
+  -->
+  
+  <!-- ПРИКЛАД: (Видали цей приклад і встав свій код) -->
+  <div style="text-align: center; padding: 40px; background: var(--bg-secondary); border-radius: 16px;">
+    <h2>⚙️ Тут буде ваш застосунок</h2>
+    <p>Вставте сюди HTML, CSS та JS вашого інструменту</p>
+    <button class="btn-primary" style="padding: 10px 20px; border-radius: 40px;">Приклад кнопки</button>
+  </div>
+  
+</div>
+
+<!-- ========================================================= -->
+<!-- ПІДТРИМУВАНІ ФОРМАТИ (ДИНАМІЧНІ) -->
+<!-- ========================================================= -->
+<section class="formats-section clean-mode-hide">
+  <h3 style="text-align: center; margin: var(--space-xl) 0 var(--space-md);">📁 Підтримувані формати ❌[ТИП_ФАЙЛУ]❌</h3>
+  <div class="formats-grid">
+    <div class="format-badge">❌[ФОРМАТ_1]❌</div>
+    <div class="format-badge">❌[ФОРМАТ_2]❌</div>
+    <div class="format-badge">❌[ФОРМАТ_3]❌</div>
+    <div class="format-badge">❌[ФОРМАТ_4]❌</div>
+    <div class="format-badge">❌[ФОРМАТ_5]❌</div>
+    <div class="format-badge">❌[ФОРМАТ_6]❌</div>
+  </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- СХОЖІ ІНСТРУМЕНТИ (АВТОМАТИЧНІ) -->
+<!-- ========================================================= -->
+<section class="related-section clean-mode-hide">
+  <div class="related-section-wrapper">
+    <h2 class="related-section-title">🔗 Схожі інструменти</h2>
+    <div class="related-simple-list" data-links="related" data-category="❌[КАТЕГОРІЯ]❌" data-current="❌[СЛАГ_ІНСТРУМЕНТУ]❌"></div>
+  </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- SEO КОНТЕНТ - ПОВНИЙ ГАЙД (ДИНАМІЧНИЙ) -->
+<!-- ========================================================= -->
+<section class="seo-block clean-mode-hide">
+  <h2>📖 ❌[ЗАГОЛОВОК_ГАЙДУ]❌</h2>
+  <p>❌[ПАРАГРАФ_1_ГАЙДУ]❌</p>
+  
+  <h3>✅ Покрокова інструкція</h3>
+  <div class="steps-category">
+    <div class="step"><div class="step-num">1</div><strong>❌[КРОК_1_ЗАГОЛОВОК]❌</strong><p>❌[КРОК_1_ОПИС]❌</p></div>
+    <div class="step"><div class="step-num">2</div><strong>❌[КРОК_2_ЗАГОЛОВОК]❌</strong><p>❌[КРОК_2_ОПИС]❌</p></div>
+    <div class="step"><div class="step-num">3</div><strong>❌[КРОК_3_ЗАГОЛОВОК]❌</strong><p>❌[КРОК_3_ОПИС]❌</p></div>
+    <div class="step"><div class="step-num">4</div><strong>❌[КРОК_4_ЗАГОЛОВОК]❌</strong><p>❌[КРОК_4_ОПИС]❌</p></div>
+  </div>
+  
+  <h3>🎯 ❌[ЗАГОЛОВОК_ПЕРЕВАГИ]❌</h3>
+  <p>❌[ТЕКСТ_ПРО_ПЕРЕВАГИ]❌</p>
+  
+  <h3>📊 Порівняння результатів</h3>
+  <div class="table-responsive">
+    <table class="comparison-table">
+      <thead><tr><th>Тип ❌[ТИП_ФАЙЛУ]❌</th><th>Оригінал</th><th>Після обробки</th><th>Економія</th></tr></thead>
+      <tbody>
+        <tr><td>❌[ПРИКЛАД_1_НАЗВА]❌</td><td>❌[ПРИКЛАД_1_РОЗМІР_ОРИГ]❌</td><td>❌[ПРИКЛАД_1_РОЗМІР_ПІСЛЯ]❌</td><td>~❌[ПРИКЛАД_1_ВІДСОТОК]❌%</td></tr>
+        <tr><td>❌[ПРИКЛАД_2_НАЗВА]❌</td><td>❌[ПРИКЛАД_2_РОЗМІР_ОРИГ]❌</td><td>❌[ПРИКЛАД_2_РОЗМІР_ПІСЛЯ]❌</td><td>~❌[ПРИКЛАД_2_ВІДСОТОК]❌%</td></tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <h3>💡 Поради для ❌[ТИП_ФАЙЛУ]❌</h3>
+  <ul>
+    <li><strong>❌[ПОРАДА_1_ЗАГОЛОВОК]❌:</strong> ❌[ПОРАДА_1_ТЕКСТ]❌</li>
+    <li><strong>❌[ПОРАДА_2_ЗАГОЛОВОК]❌:</strong> ❌[ПОРАДА_2_ТЕКСТ]❌</li>
+    <li><strong>❌[ПОРАДА_3_ЗАГОЛОВОК]❌:</strong> ❌[ПОРАДА_3_ТЕКСТ]❌</li>
+  </ul>
+  
+  <h3>🔒 Безпека та конфіденційність</h3>
+  <p>Всі обчислення відбуваються локально у вашому браузері! Ваші ❌[ТИП_ФАЙЛУ]❌ НЕ відправляються на сервер.</p>
+</section>
+
+<!-- ========================================================= -->
+<!-- FAQ БЛОК (ДИНАМІЧНИЙ) -->
+<!-- ========================================================= -->
+<section class="seo-block clean-mode-hide">
+  <h2>❓ Часті питання про ❌[ТИП_ФАЙЛУ]❌</h2>
+  <div class="faq-list-tool">
+    <div class="faq-item-tool"><div class="faq-question-tool">🔹 ❌[ПИТАННЯ_1]❌ <span>▼</span></div><div class="faq-answer-tool">❌[ВІДПОВІДЬ_1]❌</div></div>
+    <div class="faq-item-tool"><div class="faq-question-tool">🔹 ❌[ПИТАННЯ_2]❌ <span>▼</span></div><div class="faq-answer-tool">❌[ВІДПОВІДЬ_2]❌</div></div>
+    <div class="faq-item-tool"><div class="faq-question-tool">🔹 ❌[ПИТАННЯ_3]❌ <span>▼</span></div><div class="faq-answer-tool">❌[ВІДПОВІДЬ_3]❌</div></div>
+    <div class="faq-item-tool"><div class="faq-question-tool">🔹 Чи потрібна реєстрація або оплата? <span>▼</span></div><div class="faq-answer-tool">Ні! Всі інструменти безкоштовні, без реєстрації, без водяних знаків.</div></div>
+    <div class="faq-item-tool"><div class="faq-question-tool">🔹 Чи безпечно завантажувати мої файли? <span>▼</span></div><div class="faq-answer-tool">Так! Обробка відбувається локально у вашому браузері. Файли не покидають ваш пристрій.</div></div>
+  </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- ВІДГУКИ КОРИСТУВАЧІВ (ДИНАМІЧНІ) -->
+<!-- ========================================================= -->
+<section class="clean-mode-hide">
+  <h3 style="text-align: center; margin: var(--space-xl) 0 var(--space-md);">💬 Що кажуть наші користувачі</h3>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-text">"❌[ВІДГУК_1_ТЕКСТ]❌"</div>
+      <div class="testimonial-author"><span>❌[ВІДГУК_1_АВТОР]❌</span><span class="testimonial-stars">★★★★★</span></div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-text">"❌[ВІДГУК_2_ТЕКСТ]❌"</div>
+      <div class="testimonial-author"><span>❌[ВІДГУК_2_АВТОР]❌</span><span class="testimonial-stars">★★★★★</span></div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-text">"❌[ВІДГУК_3_ТЕКСТ]❌"</div>
+      <div class="testimonial-author"><span>❌[ВІДГУК_3_АВТОР]❌</span><span class="testimonial-stars">★★★★★</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- ВСІ ДОДАТКИ LB TOOLS (АВТОМАТИЧНІ) -->
+<!-- ========================================================= -->
+<section>
+  <h2 class="section-title">📋 Всі інструменти LB Tools</h2>
+  <div class="apps-container" data-links="all"></div>
+</section>
+
+</div> <!-- .content -->
+</main>
+
+<footer id="footer" class="site-footer"></footer>
+
+<!-- Глобальні скрипти (однакові для всіх сторінок) -->
+<script src="/assets/js/appsData.js"></script>
+<script src="/assets/js/render.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/scrollToTop.js"></script>
+
+<!-- ========================================================= -->
+<!-- ⚡ ІНСТРУКЦІЯ ДЛЯ AI (ВИДАЛИТИ ПІСЛЯ ЗАПОВНЕННЯ) ⚡ -->
+<!-- ========================================================= -->
+<!-- 
+🔴 ЩО ПОТРІБНО ЗМІНИТИ (ВСЕ, ЩО В ❌ПОДВІЙНИХ ХРЕСТИКАХ❌):
+
+【ОСНОВНІ НАЛАШТУВАННЯ】
+- ❌[НАЗВА_ЗАСТОСУНКУ]❌ → назва інструменту (Стиснення PDF, Конвертер MP3)
+- ❌[ТИП_ФАЙЛУ]❌ → тип файлу (PDF, MP3, VIDEO, DOC, ZIP)
+- ❌[ДІЯ]❌ → дія (стиснення, конвертація, обрізка, об'єднання)
+- ❌[КАТЕГОРІЯ]❌ → категорія (image-apps, pdf-apps, audio-apps)
+- ❌[СЛАГ_ІНСТРУМЕНТУ]❌ → унікальний ідентифікатор (compress-image, pdf-to-word)
+- ❌[НАЗВА_КАТЕГОРІЇ_УКР]❌ → Інструменти для зображень / PDF / Аудіо
+- ❌[ЕМОДЖІ_ГЕРО]❌ → іконка в заголовку (🖼️, 📄, 🎵, 🎥)
+
+【ОПИСИ】
+- ❌[КОРОТКИЙ_ОПИС_ДІЇ]❌ → Стискайте, Конвертуйте, Обрізайте
+- ❌[ОСНОВНІ_ФУНКЦІЇ]❌ → до 50 файлів, пакетна обробка, висока якість
+- ❌[УНІКАЛЬНА_ПЕРЕВАГА]❌ → локальна робота, без водяних знаків
+- ❌[РОЗШИРЕНИЙ_ОПИС_ГЕРО_1]❌ → Потужний онлайн інструмент для
+- ❌[РОЗШИРЕНИЙ_ОПИС_ГЕРО_2]❌ → з мінімальною втратою якості
+
+【ЦИФРИ ТА ФОРМАТИ】
+- ❌[КІЛЬКІСТЬ_ОБРОБЛЕНО]❌ → 2.5M, 1M, 500K
+- ❌[КІЛЬКІСТЬ_ФОРМАТІВ]❌ → 10, 15, 20
+- ❌[КІЛЬКІСТЬ_ВІДГУКІВ]❌ → 3250, 1850
+- ❌[ФОРМАТ_1]❌ → .jpg, .pdf, .mp3
+- ❌[ФОРМАТ_2]❌ → .png, .docx, .wav
+- ❌[ФОРМАТ_3]❌ → .webp, .xlsx, .flac
+
+【ГАЙД І ІНСТРУКЦІЇ】
+- ❌[ЗАГОЛОВОК_ГАЙДУ]❌ → Як стиснути PDF онлайн – гайд 2024
+- ❌[ПАРАГРАФ_1_ГАЙДУ]❌ → Детальний опис процесу...
+- ❌[КРОК_1_ЗАГОЛОВОК]❌ → Завантажте файли
+- ❌[КРОК_1_ОПИС]❌ → Перетягніть PDF в зону завантаження
+- ❌[КРОК_2_ЗАГОЛОВОК]❌ → Налаштуйте параметри
+- ❌[КРОК_2_ОПИС]❌ → Виберіть рівень стиснення
+- ❌[КРОК_3_ЗАГОЛОВОК]❌ → Розпочніть обробку
+- ❌[КРОК_3_ОПИС]❌ → Натисніть кнопку "Стиснути"
+- ❌[КРОК_4_ЗАГОЛОВОК]❌ → Завантажте результат
+- ❌[КРОК_4_ОПИС]❌ → Збережіть оброблені файли
+
+【ПОРІВНЯЛЬНА ТАБЛИЦЯ】
+- ❌[ПРИКЛАД_1_НАЗВА]❌ → Фото з камери JPG
+- ❌[ПРИКЛАД_1_РОЗМІР_ОРИГ]❌ → 8 МБ
+- ❌[ПРИКЛАД_1_РОЗМІР_ПІСЛЯ]❌ → 450 КБ
+- ❌[ПРИКЛАД_1_ВІДСОТОК]❌ → 94
+- ❌[ПРИКЛАД_2_НАЗВА]❌ → Документ PDF
+- ❌[ПРИКЛАД_2_РОЗМІР_ОРИГ]❌ → 15 МБ
+- ❌[ПРИКЛАД_2_РОЗМІР_ПІСЛЯ]❌ → 2.1 МБ
+- ❌[ПРИКЛАД_2_ВІДСОТОК]❌ → 86
+
+【ПОРАДИ】
+- ❌[ПОРАДА_1_ЗАГОЛОВОК]❌ → Оптимальна якість
+- ❌[ПОРАДА_1_ТЕКСТ]❌ → Використовуйте 80-85% для фото
+- ❌[ПОРАДА_2_ЗАГОЛОВОК]❌ → Пакетна обробка
+- ❌[ПОРАДА_2_ТЕКСТ]❌ → Обробляйте до 50 файлів одночасно
+- ❌[ПОРАДА_3_ЗАГОЛОВОК]❌ → Перейменування
+- ❌[ПОРАДА_3_ТЕКСТ]❌ → Давайте чіткі назви файлам
+
+【FAQ】
+- ❌[ПИТАННЯ_1]❌ → Як стиснути PDF без втрати якості?
+- ❌[ВІДПОВІДЬ_1]❌ → Використовуйте 80-90% стиснення...
+- ❌[ПИТАННЯ_2]❌ → Скільки файлів можна обробити?
+- ❌[ВІДПОВІДЬ_2]❌ → До 50 файлів одночасно
+- ❌[ПИТАННЯ_3]❌ → Чи підтримується [формат]?
+- ❌[ВІДПОВІДЬ_3]❌ → Так, ми підтримуємо всі популярні формати
+
+【ВІДГУКИ】
+- ❌[ВІДГУК_1_ТЕКСТ]❌ → Найкращий інструмент! За 5 хвилин обробив 100 файлів.
+- ❌[ВІДГУК_1_АВТОР]❌ → Андрій Шевченко
+- ❌[ВІДГУК_2_ТЕКСТ]❌ → Дуже зручно, все інтуїтивно зрозуміло!
+- ❌[ВІДГУК_2_АВТОР]❌ → Олена Петренко
+- ❌[ВІДГУК_3_ТЕКСТ]❌ → Працює локально - це безпечно! Дякую!
+- ❌[ВІДГУК_3_АВТОР]❌ → Максим Коваль
+
+【ДОДАТКОВО】
+- ❌[КАТЕГОРІЯ_ЗАСТОСУНКУ]❌ → MultimediaTool, PDFTool, AudioTool
+- ❌[КОРОТКИЙ_ОПИС_ДЛЯ_TWITTER]❌ → Швидке стиснення PDF онлайн
+- ❌[РОЗШИРЕНИЙ_ОПИС_ДЛЯ_SOCIAL]❌ → Безкоштовний інструмент для PDF
+- ❌[РОЗШИРЕНИЙ_ОПИС_ДЛЯ_SCHEMA]❌ → Потужний онлайн інструмент
+- ❌[ЗАГОЛОВОК_ПЕРЕВАГИ]❌ → Чому варто оптимізувати PDF?
+- ❌[ТЕКСТ_ПРО_ПЕРЕВАГИ]❌ → Оптимізовані файли завантажуються швидше...
+
+✅ ПІСЛЯ ЗАМІНИ ВСІХ ❌ЗНАЧЕНЬ❌ - ВИДАЛИТИ ЦЕЙ БЛОК З ІНСТРУКЦІЄЮ
+
+🟢 ПРИКЛАД ДЛЯ PDF (стиснення):
+❌[НАЗВА_ЗАСТОСУНКУ]❌ = PDF Compressor Pro
+❌[ТИП_ФАЙЛУ]❌ = PDF
+❌[ДІЯ]❌ = стиснення
+❌[КАТЕГОРІЯ]❌ = pdf-apps
+❌[СЛАГ_ІНСТРУМЕНТУ]❌ = compress-pdf
+
+🟢 ПРИКЛАД ДЛЯ MP3 (конвертація):
+❌[НАЗВА_ЗАСТОСУНКУ]❌ = AudioConverter Pro
+❌[ТИП_ФАЙЛУ]❌ = MP3
+❌[ДІЯ]❌ = конвертація
+❌[КАТЕГОРІЯ]❌ = audio-apps
+❌[СЛАГ_ІНСТРУМЕНТУ]❌ = convert-mp3
+-->
+</body>
+</html>

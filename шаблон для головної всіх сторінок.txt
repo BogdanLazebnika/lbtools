@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<!-- ========================================================= -->
+<!-- ⭐ [AUTO-REPLACE] НАЗВА ІНСТРУМЕНТУ ТА ФАЙЛУ -->
+<!-- ========================================================= -->
+
+<!-- 🔥 ЗМІНИТИ: "назва_файлу" та "назва_інструменту_укр" -->
+<title>[НАЗВА_ІНСТРУМЕНТУ_УКР] | Онлайн інструменти для [НАЗВА_ФАЙЛУ] | LB Tools</title>
+<meta name="description" content="Потужні онлайн інструменти для роботи з [НАЗВА_ФАЙЛУ]: [ДІЯ_1], [ДІЯ_2], [ДІЯ_3]. Безкоштовно, без реєстрації, без обмежень. Швидка обробка [НАЗВА_ФАЙЛУ] онлайн.">
+<meta name="keywords" content="[НАЗВА_ФАЙЛУ], [ДІЯ_1] [НАЗВА_ФАЙЛУ], [ДІЯ_2] [НАЗВА_ФАЙЛУ], [ДІЯ_3] [НАЗВА_ФАЙЛУ], інструменти для [НАЗВА_ФАЙЛУ], обробити [НАЗВА_ФАЙЛУ] онлайн">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lbtools.site/[НАЗВА_ФАЙЛУ]-apps">
+
+<!-- Open Graph -->
+<meta property="og:title" content="LB Tools | [ДІЯ_1] та [ДІЯ_2] [НАЗВА_ФАЙЛУ] онлайн">
+<meta property="og:description" content="Всі інструменти для [НАЗВА_ФАЙЛУ]: [ДІЯ_1], [ДІЯ_2], [ДІЯ_3]. Безкоштовно!">
+<meta property="og:url" content="https://lbtools.site/[НАЗВА_ФАЙЛУ]-apps">
+
+<!-- Twitter -->
+<meta name="twitter:title" content="[ДІЯ_1] та [ДІЯ_2] [НАЗВА_ФАЙЛУ] онлайн – LB Tools">
+<meta name="twitter:description" content="Всі інструменти для [НАЗВА_ФАЙЛУ]: [ДІЯ_1], [ДІЯ_2], [ДІЯ_3]. Безкоштовно!">
+
+<!-- Technical -->
+<meta name="theme-color" content="#3498db">
+
+<!-- Styles -->
+<link rel="stylesheet" href="/assets/css/reset.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/header.css">
+<link rel="stylesheet" href="/assets/css/footer.css">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="/favicon.ico">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "[НАЗВА_ІНСТРУМЕНТУ_УКР]",
+  "description": "Всі інструменти LB Tools для роботи з [НАЗВА_ФАЙЛУ]: [ДІЯ_1], [ДІЯ_2], [ДІЯ_3]",
+  "url": "https://lbtools.site/[НАЗВА_ФАЙЛУ]-apps"
+}
+</script>
+</head>
+<body class="fade-in">
+
+<header id="header" class="site-header"></header>
+
+<main id="main-content">
+<div class="content">
+
+<!-- Хлібні крихти -->
+<div class="breadcrumbs">
+<a href="/">Головна</a> / <span>Інструменти для [НАЗВА_ФАЙЛУ]</span>
+</div>
+
+<!-- HERO БЛОК -->
+<div class="hero-category">
+<h1>📄 [ЕМОДЖІ_1] Всі інструменти для роботи з [НАЗВА_ФАЙЛУ] онлайн</h1>
+<p>[РОЗШИРЕНИЙ_ОПИС_1] Виконуйте [ДІЯ_1], [ДІЯ_2] та [ДІЯ_3] з вашими [НАЗВА_ФАЙЛУ] без втрати якості. [РОЗШИРЕНИЙ_ОПИС_2] Понад 2.5M задоволених користувачів щодня!</p>
+</div>
+
+<!-- СТРІЧКА ДОВІРИ -->
+<div class="trust-bar-category clean-mode-hide">
+<span class="trust-item-category">🆓 Безкоштовно</span>
+<span class="trust-item-category">⚡ Пакетна обробка</span>
+<span class="trust-item-category">🔒 Локальна робота</span>
+<span class="trust-item-category">💧 Без водяних знаків</span>
+<span class="trust-item-category">📱 Всі пристрої</span>
+<span class="trust-item-category">📦 До 50 файлів</span>
+<span class="trust-item-category">✨ Висока якість</span>
+<span class="trust-item-category">⭐ 4.9/5</span>
+</div>
+
+<!-- СТАТИСТИКА -->
+<div class="category-stats clean-mode-hide">
+<div class="stat-card"><div class="stat-number">2.5M+</div><div>[НАЗВА_ФАЙЛУ] оброблено</div></div>
+<div class="stat-card"><div class="stat-number">99.9%</div><div>Задоволених</div></div>
+<div class="stat-card"><div class="stat-number">50</div><div>Макс. файлів</div></div>
+<div class="stat-card"><div class="stat-number">[КІЛЬКІСТЬ_ФОРМАТІВ]+</div><div>Форматів</div></div>
+<div class="stat-card"><div class="stat-number">24/7</div><div>Доступність</div></div>
+</div>
+
+<!-- ОСНОВНА СІТКА ІНСТРУМЕНТІВ -->
+<section class="all-main-categories-page">
+<h2 class="section-title-all-apps">[ЕМОДЖІ_2] Всі інструменти для [НАЗВА_ФАЙЛУ]</h2>
+<div class="apps-container" data-links="category" data-category="[НАЗВА_ФАЙЛУ]"></div>
+</section>
+
+<!-- ПІДТРИМУВАНІ ФОРМАТИ -->
+<section class="formats-section clean-mode-hide">
+<h3 style="text-align: center; margin: var(--space-xl) 0 var(--space-md);">📁 Всі підтримувані формати [НАЗВА_ФАЙЛУ]</h3>
+<div class="formats-grid">
+<!-- AI замінить ці формати на актуальні для вашого типу файлу -->
+<div class="format-badge">[ФОРМАТ_1].ext</div>
+<div class="format-badge">[ФОРМАТ_2].ext</div>
+<div class="format-badge">[ФОРМАТ_3].ext</div>
+<div class="format-badge">[ФОРМАТ_4].ext</div>
+<div class="format-badge">[ФОРМАТ_5].ext</div>
+<div class="format-badge">[ФОРМАТ_6].ext</div>
+</div>
+</section>
+
+<!-- SEO КОНТЕНТ -->
+<section class="seo-block clean-mode-hide">
+<h2>📖 Як працювати з [НАЗВА_ФАЙЛУ] онлайн – повний гайд 2024</h2>
+<p>[ДЕТАЛЬНИЙ_ГАЙД_ПАРАГРАФ_1] Робота з [НАЗВА_ФАЙЛУ] вимагає правильних інструментів. Набір LB Tools включає все необхідне: [ДІЯ_1], [ДІЯ_2], [ДІЯ_3]. Ось повний гайд.</p>
+
+<h3>✅ Покрокова інструкція для роботи з [НАЗВА_ФАЙЛУ]</h3>
+<div class="steps-category">
+<div class="step"><div class="step-num">1</div><strong>Виберіть інструмент</strong><p>Натисніть на потрібний: [ДІЯ_1], [ДІЯ_2] або [ДІЯ_3].</p></div>
+<div class="step"><div class="step-num">2</div><strong>Завантажте [НАЗВА_ФАЙЛУ]</strong><p>Перетягніть файли в зону завантаження або виберіть з комп'ютера, Google Drive, Dropbox.</p></div>
+<div class="step"><div class="step-num">3</div><strong>Налаштуйте параметри</strong><p>[ОПИС_НАЛАШТУВАНЬ_ДЛЯ_ВАШОГО_ФАЙЛУ]</p></div>
+<div class="step"><div class="step-num">4</div><strong>Завантажте результат</strong><p>Отримайте готовий файл без водяних знаків та збережіть на пристрій.</p></div>
+</div>
+
+<h3>🎯 Навіщо оптимізувати [НАЗВА_ФАЙЛУ] перед використанням?</h3>
+<p>[ПОЯСНЕННЯ_ВАЖЛИВОСТІ_ОПТИМІЗАЦІЇ] [НАЗВА_ФАЙЛУ] великого розміру можуть сповільнювати роботу або займати багато місця. Після обробки нашими інструментами ваш файл стане оптимальним для використання.</p>
+
+<h3>📊 Порівняння результатів обробки</h3>
+<div class="table-responsive">
+<table class="comparison-table">
+<thead>
+<tr><th>Тип [НАЗВА_ФАЙЛУ]</th><th>Оригінальний розмір</th><th>Після обробки</th><th>Економія</th></tr>
+</thead>
+<tbody>
+<tr><td>[ПРИКЛАД_1]</td><td>[РОЗМІР_1]</td><td>[РОЗМІР_ПІСЛЯ_1]</td><td>~[ВІДСОТОК_1]%</td></tr>
+<tr><td>[ПРИКЛАД_2]</td><td>[РОЗМІР_2]</td><td>[РОЗМІР_ПІСЛЯ_2]</td><td>~[ВІДСОТОК_2]%</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>💡 Поради для роботи з [НАЗВА_ФАЙЛУ]</h3>
+<ul>
+<li><strong>[ПОРАДА_1_ЗАГОЛОВОК]:</strong> [ПОРАДА_1_ТЕКСТ]</li>
+<li><strong>[ПОРАДА_2_ЗАГОЛОВОК]:</strong> [ПОРАДА_2_ТЕКСТ]</li>
+<li><strong>[ПОРАДА_3_ЗАГОЛОВОК]:</strong> [ПОРАДА_3_ТЕКСТ]</li>
+</ul>
+
+<h3>🔒 Безпека та конфіденційність</h3>
+<p>Всі обчислення відбуваються безпосередньо у вашому браузері! Ваші [НАЗВА_ФАЙЛУ] НЕ відправляються на сервер. Ви можете використовувати інструменти навіть в офлайн-режимі після завантаження сторінки.</p>
+</section>
+
+<!-- ВІДГУКИ -->
+<section class="clean-mode-hide">
+<h3 style="text-align: center; margin: var(--space-xl) 0 var(--space-md);">💬 Що кажуть наші користувачі</h3>
+<div class="testimonials-grid">
+<div class="testimonial-card"><div class="testimonial-text">"[ВІДГУК_1_ТЕКСТ]"</div><div class="testimonial-author"><span>[ВІДГУК_1_АВТОР]</span><span class="testimonial-stars">★★★★★</span></div></div>
+<div class="testimonial-card"><div class="testimonial-text">"[ВІДГУК_2_ТЕКСТ]"</div><div class="testimonial-author"><span>[ВІДГУК_2_АВТОР]</span><span class="testimonial-stars">★★★★★</span></div></div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="seo-block clean-mode-hide">
+<h2>❓ Часті питання про роботу з [НАЗВА_ФАЙЛУ]</h2>
+<div class="faq-category">
+<div class="faq-item-cat"><div class="faq-question-cat">🔹 [ПИТАННЯ_1] <span>▼</span></div><div class="faq-answer-cat">[ВІДПОВІДЬ_1]</div></div>
+<div class="faq-item-cat"><div class="faq-question-cat">🔹 [ПИТАННЯ_2] <span>▼</span></div><div class="faq-answer-cat">[ВІДПОВІДЬ_2]</div></div>
+<div class="faq-item-cat"><div class="faq-question-cat">🔹 Чи безпечно завантажувати мої [НАЗВА_ФАЙЛУ]? <span>▼</span></div><div class="faq-answer-cat">Так! Всі обчислення локальні у вашому браузері.</div></div>
+<div class="faq-item-cat"><div class="faq-question-cat">🔹 Чи потрібна реєстрація або оплата? <span>▼</span></div><div class="faq-answer-cat">Ні! Всі інструменти безкоштовні, без реєстрації та водяних знаків.</div></div>
+</div>
+</section>
+
+<!-- СХОЖІ КАТЕГОРІЇ -->
+<section class="related-section clean-mode-hide">
+<div class="related-section-wrapper">
+<h2 class="related-section-title">🔗 Схожі категорії інструментів</h2>
+<div class="related-simple-list" data-links="related" data-category="[НАЗВА_ФАЙЛУ]" data-current="[НАЗВА_ФАЙЛУ]-tools"></div>
+</div>
+</section>
+
+</div>
+</main>
+
+<footer id="footer" class="site-footer"></footer>
+
+<script src="/assets/js/appsData.js"></script>
+<script src="/assets/js/render.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/scrollToTop.js"></script>
+
+<!-- ========================================================= -->
+<!-- ⚡ ІНСТРУКЦІЯ ДЛЯ AI (ШО ЗМІНЮВАТИ) ⚡ -->
+<!-- ========================================================= -->
+<!-- 
+🔴 ЩО ПОТРІБНО ЗМІНИТИ (ВСЕ, ЩО В КВАДРАТНИХ ДУЖКАХ []):
+- [НАЗВА_ФАЙЛУ] -> основний тип файлу (PDF, MP3, DOC, VIDEO, ZIP і т.д.)
+- [НАЗВА_ІНСТРУМЕНТУ_УКР] -> назва сторінки (Стиснення PDF, Конвертація MP3)
+- [ДІЯ_1], [ДІЯ_2], [ДІЯ_3] -> дії (стиснення, конвертація, об'єднання, розділення)
+- [ЕМОДЖІ_1], [ЕМОДЖІ_2] -> іконки (📄 для PDF, 🎵 для MP3, 🎥 для відео)
+- [ФОРМАТ_1].ext -> формати файлів (.pdf, .mp3, .docx, .zip)
+- [КІЛЬКІСТЬ_ФОРМАТІВ] -> цифра
+- [РОЗШИРЕНИЙ_ОПИС_1] та [РОЗШИРЕНИЙ_ОПИС_2] -> рекламний текст
+- [ПИТАННЯ_1], [ВІДПОВІДЬ_1] -> FAQ
+- [ВІДГУК_1_ТЕКСТ], [ВІДГУК_1_АВТОР] -> відгуки
+- [ПОРАДА_1_ЗАГОЛОВОК], [ПОРАДА_1_ТЕКСТ] -> поради
+- [ПРИКЛАД_1], [РОЗМІР_1] тощо -> приклади для таблиці
+
+🟢 ПРИКЛАД ДЛЯ PDF:
+[НАЗВА_ФАЙЛУ] = PDF
+[НАЗВА_ІНСТРУМЕНТУ_УКР] = Всі інструменти для PDF
+[ДІЯ_1] = стиснення
+[ДІЯ_2] = конвертація
+[ДІЯ_3] = об'єднання
+[ФОРМАТ_1].ext = .pdf
+
+🟢 ПРИКЛАД ДЛЯ MP3:
+[НАЗВА_ФАЙЛУ] = MP3
+[ДІЯ_1] = стиснення
+[ДІЯ_2] = конвертація
+[ДІЯ_3] = обрізка
+
+✅ ПІСЛЯ ЗАМІНИ ВСІХ [ЗНАЧЕНЬ] - ВИДАЛИТИ ЦЕЙ БЛОК З ІНСТРУКЦІЄЮ!
+-->
+</body>
+</html>
